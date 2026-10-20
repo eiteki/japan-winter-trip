@@ -36,7 +36,7 @@ python3 -m http.server 8088 --bind 127.0.0.1
 
 ## Google Maps 地圖
 
-- 使用 Maps JavaScript API 與 AdvancedMarkerElement，以星形標記同時顯示多個地點，白色外圈、深色外框及分類顏色，中心編號對應清單；免登入訪客可以查看地圖。
+- 使用 Maps JavaScript API 與 AdvancedMarkerElement，以星形標記同時顯示多個地點，白色外圈、深色外框，景點亮黃、餐廳橘色、飯店紫色、交通藍色，編號依底色使用深色或白色，對應同色清單編號；免登入訪客可以查看地圖。
 - `index.html` 的 `GOOGLE_MAP_OPTIONS.keyFile` 指向使用者提供的 `./goog-map-api-key`。只在開啟地圖時讀取一次，逾時則顯示提示，不阻塞行程內容。原始 key 不複製進 HTML、不加入離線快取、已加入 `.gitignore`。
 - 瀏覽器載入 Google 時仍必須傳送 key，因此它不是伺服器祕密。部署時提供同路徑的網站專用瀏覽器 key，並在 Google Cloud 限制允許的 HTTP referrers 與 Maps JavaScript API。不要把管理憑證或服務帳戶金鑰放在此檔。
 - 本地預覽允許 `http://localhost:8090/*` 與 `http://127.0.0.1:8090/*`；部署時追加正式網站的網址。從其他 port 開啟也需要對應限制。
@@ -78,7 +78,7 @@ python3 -m http.server 8088 --bind 127.0.0.1
 
 ## 修改與更新
 
-更新應用程式檔案時提高 `sw.js` 的快取版本，目前 `v18`。新版所有檔案保存成功後才啟用，不會在閱讀中強制重載；重新開啟顯示新版。收藏使用穩定的行程 id；早期原型的索引 key 仍保留在儲存空間，避免改排行程後指向不同內容。
+更新應用程式檔案時提高 `sw.js` 的快取版本，目前 `v19`。新版所有檔案保存成功後才啟用，不會在閱讀中強制重載；重新開啟顯示新版。收藏使用穩定的行程 id；早期原型的索引 key 仍保留在儲存空間，避免改排行程後指向不同內容。
 
 ## 驗證
 
@@ -96,7 +96,7 @@ node --test tests/*.test.cjs
 
 ## 預覽與版本更新
 
-地圖已接回 Google Maps API，版本為 `v18`。
+地圖已接回 Google Maps API，版本為 `v19`。
 
 若瀏覽器仍讀取先前離線版，更新完成後會提示「載入新版」，點擊即可套用。`preview_server.py` 預設提供 `http://localhost:8090/index.html?view=map`，使用獨立的預覽 origin；線上 HTML 與 worker 回應也要求 HTTP 快取重新驗證。收藏按瀏覽器 origin 保存，因此不同預覽 port 的收藏不會自動共用。
 
