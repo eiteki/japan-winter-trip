@@ -238,6 +238,7 @@ html[data-theme="dark"] .world .night-lights{opacity:1}
 html[data-theme="dark"] .world .cabin-window{fill:#ffd78a}
 html[data-theme="dark"] .world .city-tower>path:first-child{fill:#dc9b70}
 
+
 </style>
 </head>
 <body>
@@ -260,7 +261,7 @@ html[data-theme="dark"] .world .city-tower>path:first-child{fill:#dc9b70}
 <section id="page-trip" class="page">
 <div class="intro"><div><div class="eyebrow">JAPAN · DECEMBER 2026</div><h1>北海道與東京行程</h1><p>12/1–12/6 北海道，12/6 晚–12/10 東京。</p></div><div class="datepill"><svg class="icon"><use href="#i-calendar"/></svg> DEC 01 — 10, 2026 <span>· 10 DAYS</span></div></div>
 <div class="offline-status" id="offline-status" role="status" style="margin:0 0 12px"><span class="offline-dot"></span><span id="offline-label">正在準備離線資料…</span></div>
-<div class="hero-grid"><section class="world" aria-label="北海道與東京的立體雪地旅程插畫"><div class="world-copy"><div class="eyebrow">HOKKAIDO · TOKYO</div><h2>Hokkaido<br>& Tokyo.</h2><p>北海道 → 東京<br>12/1 — 12/10</p></div><div class="world-tag">❄ DECEMBER 2026</div>
+<div class="hero-grid"><section class="world" aria-label="北海道與東京的立體雪地旅程插畫"><div class="world-copy"><h2>Hokkaido<br>& Tokyo.</h2></div>
 <svg class="scene" viewBox="0 0 820 430" preserveAspectRatio="xMidYMid slice" role="img" aria-label="被白雪覆蓋的藍色浮島、小屋與東京塔，以蜿蜒路線連接">
 <defs>
 <linearGradient id="ice" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8fdcff"/><stop offset=".4" stop-color="#57abe9"/><stop offset="1" stop-color="#438cda"/></linearGradient>
@@ -322,7 +323,7 @@ html[data-theme="dark"] .world .city-tower>path:first-child{fill:#dc9b70}
 <!-- Soft cloud / snow drifts -->
 <path d="M-40 320q37-26 73-6 1-29 42-16t35 33q32-4 45 26H-40Z" fill="#fff" opacity=".48"/><path d="M730 370q30-27 53-10 2-23 31-17t38 27v60H720Z" fill="#ecf8ff" opacity=".8"/>
 <g fill="#fff" opacity=".65"><circle cx="300" cy="86" r="3"/><circle cx="631" cy="54" r="3"/><circle cx="713" cy="143" r="4"/><circle cx="248" cy="249" r="3"/><circle cx="515" cy="85" r="2"/><circle cx="767" cy="95" r="2"/><circle cx="585" cy="111" r="2"/></g>
-</svg><div class="snow" aria-hidden="true"></div><div class="world-bottom"><span class="caption">🇯🇵 北海道 12.01–06 &nbsp; → &nbsp; 東京 12.06 晚–10</span><span class="hint">12/01 — 12/10</span></div></section>
+</svg><div class="snow" aria-hidden="true"></div><div class="world-bottom"><span class="caption">🇯🇵 北海道 12.01–06 &nbsp; → &nbsp; 東京 12.06 晚–10</span></div></section>
 <aside class="passport glass"><div class="passport-heading"><span class="mini-title">TRIP OVERVIEW</span><svg class="icon"><use href="#i-snow"/></svg></div><h3>旅程概要</h3><p class="sub">Japan · December 2026</p><div class="route-block"><div class="route-row"><span class="route-symbol">🏔️</span><div><strong>北海道</strong><small>HOKKAIDO · 12.01 — 12.06</small></div><span class="days">01—06</span></div><div class="connection">✈ 新千歲 → 東京 · 12/6 傍晚</div><div class="route-row"><span class="route-symbol">🗼</span><div><strong>東京</strong><small>TOKYO · 12.06 晚 — 12.10</small></div><span class="days">06—10</span></div></div><div class="ticket-rule"></div><div class="passport-foot"><div><strong>10</strong> <span>天</span></div><span class="draft">行程草案</span></div><p style="font-size:9px;color:#98afc2;margin-top:17px;letter-spacing:1.6px">2026.12.01 — 2026.12.10</p></aside></div>
 <details class="stay-overview glass"><summary>住宿安排 · 4 間飯店</summary><div id="stay-overview-list"></div></details><div class="sectionline"><div style="display:flex;align-items:baseline;gap:12px"><h2>每日行程</h2></div></div>
 <div class="daystrip" aria-label="選擇日期" tabindex="0"></div>
@@ -1281,7 +1282,7 @@ const snowPaused=()=>document.documentElement.classList.toggle('paused',document
 document.addEventListener('visibilitychange',snowPaused);
 // Pause decoration when another section is visible.
 const originalShowPage=showPage;showPage=id=>{originalShowPage(id);snowPaused()};
-const APP_VERSION='v36';
+const APP_VERSION='v42';
 function showUpdate(version){if(version&&version!==APP_VERSION)document.getElementById('update-notice').hidden=false}
 if('serviceWorker' in navigator)navigator.serviceWorker.addEventListener('message',event=>{if(event.data?.type==='APP_UPDATED')showUpdate(event.data.version)});
 document.getElementById('apply-update').addEventListener('click',()=>location.reload());
