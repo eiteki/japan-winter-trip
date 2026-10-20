@@ -7,6 +7,10 @@
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
 <link rel="manifest" href="./manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<script data-theme-init>
+// Apply the saved theme before the first paint; storage may be unavailable.
+(()=>{let theme='light';try{if(localStorage.getItem('japan-theme')==='dark')theme='dark'}catch{}document.documentElement.dataset.theme=theme;document.documentElement.style.colorScheme=theme;document.querySelector('meta[name="theme-color"]').content=theme==='dark'?'#0d1827':'#eaf5ff'})();
+</script>
 <style>
 :root{--ink:#233c57;--muted:#748ba2;--blue:#398fe5;--line:#ffffffb3;--glass:#ffffff91;--shadow:0 12px 35px #467ca513,inset 0 2px 0 #fff;--radius:26px;--font-ui:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Microsoft JhengHei",sans-serif;--font-display:ui-rounded,"SF Pro Rounded",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 *{box-sizing:border-box}body{margin:0;color:var(--ink);background:#eaf4fd;font-family:var(--font-ui);font-size:14px;line-height:1.6;background-image:radial-gradient(ellipse at 88% 2%,#bce0ff 0,transparent 38%),radial-gradient(ellipse at 4% 50%,#d9edff 0,transparent 45%);min-height:100vh}button,a,input{font:inherit}button{cursor:pointer;color:inherit}button{border:0}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #318ddd;outline-offset:5px}button:disabled{cursor:default}button,a{-webkit-tap-highlight-color:transparent}svg{display:block}h1,h2,h3,p{margin:0}button svg{width:19px;height:19px}.icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.shell{max-width:1320px;padding:0 48px;margin:auto}.topbar{height:100px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px}.brand-mark{height:44px;width:44px;display:grid;place-items:center;background:linear-gradient(145deg,#fff,#d1e9ff);border:1px solid white;border-radius:15px;box-shadow:0 5px 10px #719eca22;font-size:26px;color:#4f9bdc}.wordmark{font-family:var(--font-display);font-size:24px;font-weight:700;letter-spacing:3px}.brand small{display:block;font-size:9px;letter-spacing:2px;color:var(--muted);margin-top:-3px}.topnav{display:flex;padding:5px;background:#ffffff60;border:1px solid #ffffff9c;border-radius:40px;gap:3px}.navbtn{display:flex;align-items:center;gap:8px;padding:11px 20px;border-radius:30px;background:transparent;font-size:13px;color:#6e89a0;transition:.2s}.navbtn.active{background:#fff;color:#337dcc;box-shadow:0 3px 10px #326e9e0d}.season{display:flex;gap:10px;align-items:center;font-size:11px;letter-spacing:1.4px;color:#7391ac}.season .round{width:36px;height:36px;display:grid;place-items:center;border:1px solid white;border-radius:50%;background:#ffffff69}.intro{display:flex;justify-content:space-between;align-items:end;padding:18px 0 24px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:2.4px;color:#79a0bf;margin-bottom:7px}.intro h1{font-size:28px;letter-spacing:-1px;font-weight:600}.intro h1 span{color:#62a6db}.intro p{color:var(--muted);font-size:12px;margin-top:5px}.datepill{display:flex;align-items:center;gap:9px;padding:10px 16px;border:1px solid white;background:#ffffff65;border-radius:16px;font-size:12px}.datepill span{color:#8398ac}.hero-grid{display:grid;grid-template-columns:1fr 300px;gap:22px}.world{height:393px;position:relative;overflow:hidden;border-radius:32px;background:linear-gradient(145deg,#d1e8ff,#9cd3ff 70%,#78b8f3);border:2px solid #ffffffb3;box-shadow:0 16px 42px #5894bc20,inset 0 3px 0 #fff9}.world:after{content:'';position:absolute;inset:0;pointer-events:none;border-radius:30px;box-shadow:inset 0 -16px 24px #a4d4ff2b}.world-copy{position:absolute;left:30px;top:26px;z-index:2;pointer-events:none}.world-copy .eyebrow{color:#427da9}.world h2{font:600 47px/1.08 var(--font-display);letter-spacing:-1.4px;color:#fff;text-shadow:0 3px 1px #609dd747,0 5px 20px #467aab22}.world-copy p{color:#4e84ae;font-size:12px;margin-top:9px}.world-tag{position:absolute;right:23px;top:24px;z-index:3;display:flex;align-items:center;gap:7px;background:#ffffff6b;border:1px solid #ffffffa8;border-radius:30px;padding:7px 12px;font-size:10px;color:#497da7;backdrop-filter:blur(6px)}.world svg.scene{width:100%;height:100%;position:absolute;inset:0}.world-bottom{position:absolute;bottom:18px;left:23px;right:23px;display:flex;justify-content:space-between;align-items:center;font-size:10px;color:#42729b;z-index:3}.world-bottom .caption{background:#ffffff9c;border:1px solid #fffd;padding:8px 13px;border-radius:12px;backdrop-filter:none}.world-bottom .hint{color:#f9fdff;text-shadow:0 1px 4px #4a7aaf}.snow{position:absolute;inset:0;pointer-events:none;z-index:2}.snow i{position:absolute;width:4px;height:4px;background:#fff;border-radius:50%;opacity:.7;animation:drift 10s linear infinite}.snow i:nth-child(3n){width:7px;height:7px;filter:none}@keyframes drift{from{transform:translateY(-30px)}to{transform:translate(25px,420px)}}.glass{background:linear-gradient(135deg,#ffffffbc,#ffffff64);border:1px solid #ffffffed;border-radius:var(--radius);box-shadow:var(--shadow);backdrop-filter:blur(8px)}.passport{padding:22px 23px;position:relative;overflow:hidden}.passport:before{content:'';position:absolute;top:-60px;right:-40px;background:#d2e8ff;border-radius:50%;width:150px;height:150px;filter:none;opacity:.3;z-index:-1}.mini-title{font-size:10px;letter-spacing:2px;color:#8da4b8;font-weight:700}.passport-heading{display:flex;justify-content:space-between;align-items:center}.passport-heading .icon{color:#76a5cc}.passport h3{font-size:20px;letter-spacing:-.5px;margin-top:13px}.passport .sub{font-size:11px;color:var(--muted);margin-top:2px}.route-block{margin-top:24px}.route-row{display:flex;align-items:center;gap:13px}.route-symbol{height:41px;width:41px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#fff,#cce6fd);border:1px solid white;box-shadow:0 4px 7px #5e94bb18;font-size:21px}.route-row strong{font-size:14px;font-weight:600}.route-row small{display:block;color:var(--muted);font-size:10px}.route-row .days{margin-left:auto;color:#8aa4bc;font:500 11px var(--font-display)}.connection{margin:5px 0 5px 20px;border-left:1px dashed #a7c7e2;padding:7px 0 7px 32px;display:flex;align-items:center;gap:7px;color:#8aa3b9;font-size:10px}.ticket-rule{height:1px;border-top:1px dashed #bdd4e6;margin:20px -23px 15px;position:relative}.ticket-rule:before,.ticket-rule:after{content:'';height:18px;width:18px;background:#eaf4fd;border-radius:50%;position:absolute;top:-9px}.ticket-rule:before{left:-10px}.ticket-rule:after{right:-10px}.passport-foot{display:flex;justify-content:space-between;align-items:center}.passport-foot strong{font:600 23px var(--font-display)}.passport-foot span{color:var(--muted);font-size:10px}.draft{background:#e2f0fd;color:#6395bb;border-radius:8px;padding:4px 8px;font-size:10px}.sectionline{display:flex;justify-content:space-between;align-items:center;margin:29px 0 13px}.sectionline h2{font-size:18px;font-weight:600;letter-spacing:-.4px}.sectionline .small{font-size:11px;color:#87a0b5}.region-tabs{display:flex;gap:4px;background:#dcebf8;border:1px solid #ffffffab;padding:4px;border-radius:30px}.region-tabs button{padding:7px 15px;border-radius:25px;background:transparent;font-size:11px;color:#7895ae}.region-tabs button.active{background:#fff;color:#428bd0;box-shadow:0 2px 7px #4e83af11}.daystrip{display:grid;grid-template-columns:repeat(10,1fr);gap:8px}.day{position:relative;padding:12px 5px;border-radius:19px;background:#ffffff74;border:1px solid #ffffffed;text-align:center;transition:transform .2s,box-shadow .2s;color:#6e8daa;min-width:0}.day:hover{transform:translateY(-3px);box-shadow:0 8px 16px #5893be12}.day .weekday{display:block;font:500 9px var(--font-display);letter-spacing:1px;color:#8ba6be}.day strong{display:block;font:600 23px var(--font-display);margin:2px 0 4px}.day .location{display:block;font-size:10px;white-space:nowrap}.day .dot{height:4px;width:4px;display:block;border-radius:50%;background:#a6ccec;margin:7px auto 0}.day.active{background:linear-gradient(145deg,#65b5fa,#398ddb);color:#fff;border-color:#bfe5ff;box-shadow:0 7px 18px #348ddc32,inset 0 2px 0 #ffffff5e}.day.active .weekday{color:#d9efff}.day.active .dot{background:#fff}.day.transit:after{content:'✈';position:absolute;right:8px;top:9px;font-size:9px;color:#8eafce}.day.active.transit:after{color:white}.day.outside{opacity:.45}.content-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;margin-top:25px}.plan-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}.plan-title{display:flex;gap:11px;align-items:center}.daybadge{font:600 11px var(--font-display);background:#d9ecfd;color:#5a99cf;border:1px solid white;border-radius:9px;padding:6px 10px}.plan-header h2{font-size:18px;font-weight:600}.plan-header p{font-size:11px;color:var(--muted);margin-top:1px}.weather{display:flex;gap:7px;align-items:center;color:#87a0b7;font-size:10px}.weather span:first-child{font-size:20px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.place-card{overflow:hidden;border-radius:23px;background:#ffffff9e;border:1px solid #ffffffee;box-shadow:var(--shadow);transition:transform .2s}.place-card:hover{transform:translateY(-4px)}.art{height:133px;position:relative;overflow:hidden;background:linear-gradient(145deg,#e5f2ff,#bdddf6)}.art svg{width:100%;height:100%}.time{position:absolute;top:11px;left:11px;background:#ffffffb8;border:1px solid white;padding:3px 8px;border-radius:8px;font:500 9px var(--font-display);letter-spacing:.5px;backdrop-filter:none}.save{position:absolute;top:8px;right:9px;width:28px;height:28px;border:1px solid #fffc;border-radius:50%;display:grid;place-items:center;background:#ffffff97;color:#7b9fbe}.save svg{width:14px;height:14px}.save.saved{color:#388cce;background:#e6f3ff}.save.saved svg{fill:#83c5f4}.cardbody{padding:14px}.category{font-size:9px;letter-spacing:1.1px;color:#91abc0;margin-bottom:3px}.cardbody h3{font-size:14px;font-weight:600;margin-bottom:4px}.cardbody p{font-size:10px;color:var(--muted);min-height:32px;line-height:1.6}.cardfoot{display:flex;align-items:center;justify-content:space-between;margin-top:12px;font-size:9px;color:#93aabd}.cardfoot a{display:flex;align-items:center;gap:3px;color:#609bcb;padding:4px 0}.cardfoot .icon{width:12px;height:12px}.packing{padding:20px 21px;align-self:start}.packing-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.packing h3{font-size:14px;font-weight:600}.packing .counter{font:500 10px var(--font-display);color:#8ba8c1}.packing label{display:flex;align-items:center;gap:9px;padding:8px 0;font-size:11px;color:#758fa7;cursor:pointer}.packing input{appearance:none;height:16px;width:16px;flex:none;margin:0;border:1px solid #b8d2e7;border-radius:5px;background:#fff9;cursor:pointer}.packing input:checked{background:#75b8ea;border-color:#75b8ea}.packing input:checked:after{content:'✓';display:block;text-align:center;color:white;font-size:11px;line-height:14px}.packing label:has(input:checked) span{color:#a0b3c2;text-decoration:line-through}.packing-note{margin-top:10px;padding-top:12px;border-top:1px solid #d7e8f4;font-size:10px;color:#93aabd;line-height:1.7}.tripnote{display:flex;gap:9px;padding:13px 16px;margin-top:15px;font-size:10px;color:#7294af;border-radius:15px;background:#dceefb83;border:1px solid #ffffff9e}.tripnote .icon{width:16px;height:16px;flex:none;margin-top:1px}footer{display:flex;justify-content:space-between;align-items:center;margin:26px 0 28px;font-size:9px;color:#9bb0c3;letter-spacing:1px}.footer-mark{font:500 12px var(--font-display);letter-spacing:2px}.page[hidden]{display:none}.explore-heading{margin:15px 0 20px}.explore-heading h2{font-size:24px}.explore-heading p{font-size:12px;color:var(--muted);margin-top:4px}.map-panel{padding:25px}.map-list{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:20px}.map-stop{padding:18px;border-radius:18px;background:#fff8;display:flex;gap:12px;align-items:center}.map-stop .num{background:#d3eaff;border:1px solid white;border-radius:12px;width:34px;height:34px;display:grid;place-items:center;color:#5c9dd2;font:500 13px var(--font-display)}.map-stop h3{font-size:13px}.map-stop p{font-size:10px;color:var(--muted)}.map-stop a{margin-left:auto;font-size:11px;color:#5e98c7;padding:8px}.empty{padding:60px;text-align:center;color:var(--muted)}.mobile-nav{display:none}.toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%) translateY(20px);padding:11px 20px;border-radius:16px;background:#ffffffec;border:1px solid white;box-shadow:0 8px 25px #467ca528;backdrop-filter:blur(6px);font-size:12px;z-index:30;opacity:0;transition:.25s;pointer-events:none}.toast.visible{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -158,10 +162,81 @@ body.map-active{height:100vh;height:100dvh;min-height:0;overflow:hidden;padding-
 }
 
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+
+/* Theme toggle and dark winter palette. No additional assets or requests. */
+.header-actions{display:flex;align-items:center;gap:16px;flex:none}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:84px;min-height:44px;padding:9px 13px;border:1px solid #c3d9ea;border-radius:22px;background:#fafdff;color:#386e97;font-size:13px}
+.theme-toggle .icon{width:19px;height:19px}
+html[data-theme="dark"]{--ink:#e5eff8;--muted:#afc1d3;--blue:#8cc9ff;--line:#35516c;--glass:#182a3c;--shadow:0 12px 35px #0003,inset 0 1px 0 #416079;--surface:#182a3c;--surface-raised:#21374d;--border:#35516c;--accent:#98d2ff;--secondary:#afc1d3;color-scheme:dark}
+html[data-theme="dark"] body{background:#0d1827;background-image:radial-gradient(ellipse at 88% 2%,#193653 0,transparent 38%),radial-gradient(ellipse at 4% 50%,#152b42 0,transparent 45%)}
+html[data-theme="dark"] :is(.glass,.datepill,.topnav,.brand-mark,.season .round,.mobile-nav,.day-stay,.stay-overview,.transport-card,.guide-card,.map-heading,.map-pins-panel,.toast,.update-notice){background:var(--surface);border-color:var(--border);box-shadow:var(--shadow)}
+html[data-theme="dark"] :is(.theme-toggle,.route-symbol,.draft,.daybadge,.world-tag,.world-bottom .caption,.map-list-toggle,.map-pin-row button,.update-notice button){background:var(--surface-raised);border-color:var(--border);color:var(--accent)}
+html[data-theme="dark"] :is(.eyebrow,.mini-title,.datepill span,.season,.world-copy p,.world-copy .eyebrow,.world-bottom,.route-row .days,.connection,.passport-foot span,.sectionline .small,.weather,.timeline-help,.timeline-category,.timeline-copy p,.timeline-time small,.stay-label,.day-stay p,.guide-help,.guide-japanese,.guide-note,.transport-table small,.map-toolbar>span,.map-pin-row p,.map-pin-row p.place-note,.map-pins-note,.map-pins-heading span,.coordinate-pending,.offline-status,.offline-help,footer){color:var(--secondary)}
+html[data-theme="dark"] :is(.navbtn,.timeline-time,.timeline-actions a,.timeline-save,.stay-links,.stay-overview>summary,.entry-options,.entry-options li,.transport-links,.guide-links,.guide-card summary,.map-heading a,.map-pin-row a){color:var(--accent)}
+html[data-theme="dark"] :is(.navbtn.active,.region-tabs button.active,.map-categories button.active){background:#304e6b;color:#eaf6ff;border-color:#587a98;box-shadow:none}
+html[data-theme="dark"] .region-tabs{background:#132335;border-color:var(--border)}
+html[data-theme="dark"] .region-tabs button{color:var(--secondary)}
+html[data-theme="dark"] .day{background:#1c3045;border-color:var(--border);color:#c4d9ed}
+html[data-theme="dark"] .day :is(.weekday,.location){color:inherit}
+html[data-theme="dark"] .day.active{background:linear-gradient(145deg,#367caf,#235578);border-color:#87bee4;color:#fff;box-shadow:0 5px 16px #0003}
+html[data-theme="dark"] .day .dot{background:#77a4c9}
+html[data-theme="dark"] .timeline-card{background:var(--surface);border-color:var(--border);box-shadow:0 5px 16px #0002}
+html[data-theme="dark"] .timeline-key .timeline-card{background:#203a52;border-color:#597a96}
+html[data-theme="dark"] .timeline-item:before{background:#35516c}
+html[data-theme="dark"] .timeline-dot{background:#1c3045;border-color:#8cb9dc}
+html[data-theme="dark"] .timeline-key .timeline-dot{background:#8cc9ff;border-color:#c8e7ff;box-shadow:0 0 0 3px #35516c}
+html[data-theme="dark"] .timeline-save.saved{color:#a8dbff}
+html[data-theme="dark"] .entry-status{background:#463925;color:#f2d8a7}
+html[data-theme="dark"] .timeline-thumb{background:#243f57;border-color:var(--border)}
+html[data-theme="dark"] .tripnote{background:#192e43;border-color:var(--border);color:var(--secondary)}
+html[data-theme="dark"] :is(.guide-card details,.transport-table td,.map-pin-row,.map-pins-note,.packing-note){border-color:var(--border)}
+html[data-theme="dark"] .transport-table th{background:var(--surface-raised);color:#d5eaff}
+html[data-theme="dark"] .guide-duration{background:#493d27;color:#f7dfa4}
+html[data-theme="dark"] .map-controls{background:#132335;border-color:var(--border)}
+html[data-theme="dark"] .map-categories button{background:var(--surface);border-color:var(--border);color:var(--secondary)}
+html[data-theme="dark"] .map-categories button.active{background:#304e6b;color:#eaf6ff;border-color:#587a98}
+html[data-theme="dark"] .map-active .topbar{background:#101e2e;border-color:var(--border)}
+html[data-theme="dark"] .map-active :is(.map-heading,.map-pins-panel){background:#182a3cf7}
+html[data-theme="dark"] .map-active #map-pins{scrollbar-color:#5d7d99 transparent}
+html[data-theme="dark"] .map-stage,html[data-theme="dark"] .map-placeholder{background:#15283b;color:var(--secondary)}
+html[data-theme="dark"] .gm-style :is(.gm-style-iw-c,.gm-style-iw-d){background:var(--surface)}
+html[data-theme="dark"] .gm-style .gm-style-iw-tc:after{background:var(--surface)}
+html[data-theme="dark"] .gm-style .gm-ui-hover-effect img{filter:invert(1)}
+html[data-theme="dark"] .pin-popup h3{color:var(--ink)}
+html[data-theme="dark"] .pin-popup :is(p,span){color:var(--secondary)}
+html[data-theme="dark"] .pin-popup a{color:var(--accent)}
+html[data-theme="dark"] #packing-full{background:#132335;border-color:var(--border)}
+html[data-theme="dark"] .packing-group{background:var(--surface);border-color:var(--border)}
+html[data-theme="dark"] #packing-full label{background:#21374d;color:var(--ink)}
+html[data-theme="dark"] #packing-full label:hover{border-color:#7293ae}
+html[data-theme="dark"] #packing-full input{background:#101e2e;border-color:#89aac5}
+html[data-theme="dark"] #packing-full input:checked{background:#367caf;border-color:#98d2ff}
+html[data-theme="dark"] #packing-full label:has(input:checked){background:#203e4d;border-color:#477587}
+html[data-theme="dark"] #packing-full label:has(input:checked) span{color:#c5dce7}
+html[data-theme="dark"] #packing-full :is(.packing-title p,.packing-note),html[data-theme="dark"] .packing-group-heading>span,html[data-theme="dark"] #page-prep>.offline-help,html[data-theme="dark"] #page-prep>.tripnote{color:var(--secondary)}
+html[data-theme="dark"] #packing-full .counter{background:#294761;color:#cce8ff}
+html[data-theme="dark"] .packing-progress{background:#2d455c;accent-color:#8cc9ff}
+html[data-theme="dark"] .packing-progress::-webkit-progress-bar{background:#2d455c}
+html[data-theme="dark"] .packing-progress::-webkit-progress-value{background:#8cc9ff}
+html[data-theme="dark"] .packing-progress::-moz-progress-bar{background:#8cc9ff}
+html[data-theme="dark"] .world{background:linear-gradient(145deg,#18334c,#254b6d 70%,#193d5c);border-color:#45637d;box-shadow:var(--shadow)}
+html[data-theme="dark"] .world svg.scene{opacity:.7}
+html[data-theme="dark"] .world-copy :is(p,.eyebrow){color:#cce8ff}
+html[data-theme="dark"] .ticket-rule{border-color:var(--border)}
+html[data-theme="dark"] .ticket-rule:before,html[data-theme="dark"] .ticket-rule:after{background:#0d1827}
+html[data-theme="dark"] button:focus-visible,html[data-theme="dark"] a:focus-visible,html[data-theme="dark"] input:focus-visible{outline-color:#a8dbff}
+@media(max-width:800px){
+ .header-actions{gap:0}.header-actions .season{display:none}.theme-toggle{min-width:78px;min-height:44px;padding:8px 11px;font-size:12px}
+ html[data-theme="dark"] #page-trip .daystrip{background:#101e2e;border-color:var(--border);box-shadow:0 5px 12px #0003}
+ html[data-theme="dark"] #page-trip .world{background:none;border:0;box-shadow:none;opacity:.12}
+}
+
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14A8.8 8.8 0 0 1 10 3.5 8.8 8.8 0 1 0 20.5 14Z"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></symbol>
 <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
 <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3Z"/><path d="M9 3v15M15 6v15"/></symbol>
 <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
@@ -172,7 +247,7 @@ body.map-active{height:100vh;height:100dvh;min-height:0;overflow:hidden;padding-
 <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></symbol>
 </defs></svg>
 <div class="shell">
-<header class="topbar"><a class="brand" href="#" aria-label="日本旅遊首頁"><div class="brand-mark">❄</div><div><div class="wordmark" style="font-size:20px;letter-spacing:1px">日本旅遊</div><small>北海道 · 東京</small></div></a><nav class="topnav" aria-label="主要導覽"></nav><div class="season"><span class="round">❄</span> WINTER ’26</div></header>
+<header class="topbar"><a class="brand" href="#" aria-label="日本旅遊首頁"><div class="brand-mark">❄</div><div><div class="wordmark" style="font-size:20px;letter-spacing:1px">日本旅遊</div><small>北海道 · 東京</small></div></a><nav class="topnav" aria-label="主要導覽"></nav><div class="header-actions"><div class="season"><span class="round">❄</span> WINTER ’26</div><button id="theme-toggle" class="theme-toggle" type="button" aria-label="切換至深色主題" aria-pressed="false"></button></div></header>
 <div id="update-notice" class="update-notice" role="status" hidden><span>新版本已準備好，重新載入即可查看更新。</span><button id="apply-update" type="button">載入新版</button></div>
 <main>
 <section id="page-trip" class="page">
@@ -251,6 +326,24 @@ const nav=[['trip','grid','旅程'],['map','map','地圖'],['prep','bag','行前
 for(const el of document.querySelectorAll('.topnav,.mobile-nav'))el.innerHTML=nav.map(([id,i,label])=>`<button class="navbtn ${id==='trip'?'active':''}" data-page="${id}" ${id==='trip'?'aria-current="page"':''}>${icon(i)}${label}</button>`).join('');
 function readStore(key,fallback){try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}}
 function writeStore(key,value){try{localStorage.setItem(key,JSON.stringify(value))}catch{toast('此瀏覽器無法儲存，狀態僅保留到關閉頁面')}}
+// THEME CONTROLS START
+function syncThemeToggle(){const dark=document.documentElement.dataset.theme==='dark',button=document.getElementById('theme-toggle');button.innerHTML=icon(dark?'sun':'moon')+`<span>${dark?'淺色':'深色'}</span>`;button.setAttribute('aria-pressed',String(dark));button.setAttribute('aria-label',dark?'切換至淺色主題':'切換至深色主題')}
+function setTheme(theme){
+ if(!['light','dark'].includes(theme)||document.documentElement.dataset.theme===theme)return;
+ document.documentElement.dataset.theme=theme;document.documentElement.style.colorScheme=theme;
+ document.querySelector('meta[name="theme-color"]').content=theme==='dark'?'#0d1827':'#eaf5ff';
+ try{localStorage.setItem('japan-theme',theme)}catch{}
+ syncThemeToggle();
+ // Google Maps colorScheme is an initialization option. Recreate only on an explicit theme change while the map is open.
+ if(currentPage==='map'){
+  const center=googleMap?.getCenter?.(),zoom=googleMap?.getZoom?.();
+  renderMap(true).then(()=>{if(document.documentElement.dataset.theme===theme&&googleMap&&center&&Number.isFinite(zoom)){googleMap.setCenter(center);googleMap.setZoom(zoom)}});
+ }
+}
+syncThemeToggle();
+document.getElementById('theme-toggle').addEventListener('click',()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark'));
+// THEME CONTROLS END
+
 let saved=new Set(readStore('yuki-saved',[])),checks=readStore('yuki-packing',{}),selected=1,region='all',currentPage='trip';
 const STAYS=[{"id": "yuen", "name": "ONSEN RYOKAN 由縁 札幌", "dates": "12/1–12/2", "city": "札幌", "url": "https://www.uds-hotels.com/yuen/sapporo/", "query": "ONSEN RYOKAN 由縁 札幌", "status": "預訂狀態待確認"}, {"id": "hanamomiji", "name": "花もみじ", "dates": "12/2–12/4", "city": "定山溪", "url": "https://shikanoyu.co.jp/hana/spa/", "query": "花もみじ 定山渓", "status": "預訂狀態待確認"}, {"id": "grids", "name": "グリッズプレミアムホテル小樽", "dates": "12/4–12/6", "city": "小樽", "url": "https://gridshotel.com/otaru/", "query": "GRIDS PREMIUM HOTEL Otaru", "status": "預訂狀態待確認"}, {"id": "keio", "name": "京王廣場大飯店", "dates": "12/6–12/10", "city": "東京", "url": "", "query": "Keio Plaza Hotel Tokyo Shinjuku", "status": "預訂狀態待確認"}];
 const item=(title,desc,type,query,tag,time)=>({title,desc,type,query,tag,time});
@@ -1065,7 +1158,8 @@ const GOOGLE_MAP_OPTIONS={keyFile:'./goog-map-api-key',mapId:'DEMO_MAP_ID'};
 const escapeHTML=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 function mapQueryURL(query){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(query)}
 function clearGooglePins(){for(const marker of googleMarkers){google.maps.event?.clearInstanceListeners(marker);marker.map=null}googleMarkers=[];googleInfo?.close()}
-function clearGoogleMap(){if(googleMap)clearGooglePins();googleMap=null;googleInfo=null;googleRegion=null;googleCategory=null}
+let googleTheme=null;
+function clearGoogleMap(){googleTheme=null;if(googleMap)clearGooglePins();googleMap=null;googleInfo=null;googleRegion=null;googleCategory=null}
 function mapFailure(code){
  const messages={key:'Google Maps key 未能讀取，請確認設定檔並透過預覽網址開啟。',auth:'Google Maps 授權失敗，請確認 key、允許的網站、API 與計費設定。',network:'Google Maps 未能載入，可重新載入或使用地點搜尋連結。'};
  document.getElementById('map-stage').innerHTML='<div class="map-placeholder">地圖暫時無法載入。<br>行程與地點清單仍可查看。</div>';
@@ -1133,7 +1227,7 @@ async function renderMap(force=false){
  status.textContent='正在載入 Google Maps；地點清單可直接查看。';
  try{
   await loadGoogleMaps();if(generation!==mapGeneration||currentPage!=='map')return;
-  if(force||!googleMap){clearGoogleMap();stage.replaceChildren();googleMap=new google.maps.Map(stage,{center:cfg.center,zoom:cfg.zoom,mapId:GOOGLE_MAP_OPTIONS.mapId,colorScheme:google.maps.ColorScheme?.LIGHT||'LIGHT',streetViewControl:false,mapTypeControl:false,fullscreenControl:true,zoomControl:true,zoomControlOptions:{position:google.maps.ControlPosition?.LEFT_CENTER},fullscreenControlOptions:{position:google.maps.ControlPosition?.LEFT_CENTER},gestureHandling:'cooperative'});googleInfo=new google.maps.InfoWindow()}
+  if(force||!googleMap||googleTheme!==document.documentElement.dataset.theme){clearGoogleMap();googleTheme=document.documentElement.dataset.theme;stage.replaceChildren();googleMap=new google.maps.Map(stage,{center:cfg.center,zoom:cfg.zoom,mapId:GOOGLE_MAP_OPTIONS.mapId,colorScheme:document.documentElement.dataset.theme==='dark'?(google.maps.ColorScheme?.DARK||'DARK'):(google.maps.ColorScheme?.LIGHT||'LIGHT'),streetViewControl:false,mapTypeControl:false,fullscreenControl:true,zoomControl:true,zoomControlOptions:{position:google.maps.ControlPosition?.LEFT_CENTER},fullscreenControlOptions:{position:google.maps.ControlPosition?.LEFT_CENTER},gestureHandling:'cooperative'});googleInfo=new google.maps.InfoWindow()}
   const changedRegion=googleRegion!==id,changedCategory=googleCategory!==mapCategory;googleRegion=id;googleCategory=mapCategory;renderGooglePins(id,places);
   if(changedRegion||changedCategory||force)fitGoogleRegion(id,mapCategory);
   if(focused){const marker=googleMarkers.find(marker=>marker.tripSpotId===focused.id);if(marker){googleMap.panTo({lat:focused.lat,lng:focused.lng});googleMap.setZoom(15);openGoogleSpot(focused,marker)}}
@@ -1161,7 +1255,7 @@ const snowPaused=()=>document.documentElement.classList.toggle('paused',document
 document.addEventListener('visibilitychange',snowPaused);
 // Pause decoration when another section is visible.
 const originalShowPage=showPage;showPage=id=>{originalShowPage(id);snowPaused()};
-const APP_VERSION='v28';
+const APP_VERSION='v29';
 function showUpdate(version){if(version&&version!==APP_VERSION)document.getElementById('update-notice').hidden=false}
 if('serviceWorker' in navigator)navigator.serviceWorker.addEventListener('message',event=>{if(event.data?.type==='APP_UPDATED')showUpdate(event.data.version)});
 document.getElementById('apply-update').addEventListener('click',()=>location.reload());

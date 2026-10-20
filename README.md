@@ -135,3 +135,10 @@ Set the repository Actions secret `GOOGLE_MAPS_API_KEY` to the browser key after
 - The browser key is public in the deployed website, as required by Maps JavaScript API. GitHub Secrets keeps it out of source history; website/API restrictions control where it can be used.
 - Main branch pushes deploy automatically; changing only the secret requires a manual workflow run.
 - Without the secret, the itinerary and checklist work but the map cannot load.
+
+## Light and dark themes (v29)
+
+- The header button switches themes on desktop and mobile. `japan-theme` stores the selection locally; first use stays light. The saved theme applies before first paint, including offline.
+- Dark colors cover the trip timeline, sticky dates, transport and attraction cards, checklist, navigation and map panels. Marker category colors remain vivid.
+- Google Maps uses its native LIGHT/DARK color scheme. This initialization option requires a new map instance when changing the theme while the map is open; center and zoom are preserved. Theme changes outside the map tab load no Google resources. Reopening the map applies the selected theme. A new map instance can count as another Dynamic Maps load.
+- Verification: 28 Node tests passed, plus DOM simulations at 390px and 1280px for saved theme, switching, checklist palette, map theme/camera, lazy key loading and offline behavior using a mock Google SDK. Main text contrast 12.56:1, secondary text 6.63:1 and links 9.06:1 against their dark surfaces. Actual browser rendering and live Google map palette have not been visually inspected by the agent.
