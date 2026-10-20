@@ -121,3 +121,17 @@ git log --oneline
 ### v21
 
 旅程 tab 移除行前清單側欄，每日行程使用完整寬度。清單保留在行前 tab，既有勾選狀態維持。
+
+## GitHub Pages
+
+Public URL: https://eiteki.github.io/japan-winter-trip/
+
+The Pages workflow publishes only index.html, sw.js, manifest.webmanifest, icon.svg, and optional browser map configuration. Local scripts, data snapshots, and the raw key file are not copied to the website.
+
+Set the repository Actions secret `GOOGLE_MAPS_API_KEY` to the browser key after restricting it in Google Cloud:
+
+- Application restrictions: Websites; allow `https://eiteki.github.io/*`. For local preview, optionally allow `http://localhost:8090/*` and `http://127.0.0.1:8090/*`.
+- API restrictions: Maps JavaScript API only.
+- The browser key is public in the deployed website, as required by Maps JavaScript API. GitHub Secrets keeps it out of source history; website/API restrictions control where it can be used.
+- Main branch pushes deploy automatically; changing only the secret requires a manual workflow run.
+- Without the secret, the itinerary and checklist work but the map cannot load.
