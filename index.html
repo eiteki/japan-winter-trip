@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <script data-theme-init>
 // Apply the saved theme before the first paint; storage may be unavailable.
-(()=>{let theme='light';try{if(localStorage.getItem('japan-theme')==='dark')theme='dark'}catch{}document.documentElement.dataset.theme=theme;document.documentElement.style.colorScheme=theme;document.querySelector('meta[name="theme-color"]').content=theme==='dark'?'#0d1827':'#eaf5ff'})();
+(()=>{let theme='light';try{if(localStorage.getItem('japan-theme')==='dark')theme='dark'}catch{}document.documentElement.dataset.theme=theme;document.documentElement.style.colorScheme=theme;document.querySelector('meta[name="theme-color"]').content=theme==='dark'?'#111418':'#eaf5ff'})();
 </script>
 <style>
 :root{--ink:#233c57;--muted:#748ba2;--blue:#398fe5;--line:#ffffffb3;--glass:#ffffff91;--shadow:0 12px 35px #467ca513,inset 0 2px 0 #fff;--radius:26px;--font-ui:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Microsoft JhengHei",sans-serif;--font-display:ui-rounded,"SF Pro Rounded",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -131,8 +131,8 @@ body.map-active{height:100vh;height:100dvh;min-height:0;overflow:hidden;padding-
 #packing-full h3{font-size:20px}
 #packing-full .packing-title p{font-size:13px;color:#61778d;margin-top:3px}
 #packing-full .counter{font:600 14px var(--font-ui);color:#326c96;background:#e2effa;border-radius:20px;padding:7px 12px;white-space:nowrap}
-.packing-progress{display:block;appearance:none;width:100%;height:8px;border:0;border-radius:8px;overflow:hidden;background:#dce8f3;accent-color:#398bd0;margin-bottom:24px}
-.packing-progress::-webkit-progress-bar{background:#dce8f3;border-radius:8px}.packing-progress::-webkit-progress-value{background:#398bd0;border-radius:8px}.packing-progress::-moz-progress-bar{background:#398bd0;border-radius:8px}
+.packing-progress{display:block;appearance:none;width:100%;height:8px;border:0;border-radius:8px;overflow:hidden;background:#dce8f3;accent-color:#2e8b57;margin-bottom:24px}
+.packing-progress::-webkit-progress-bar{background:#dce8f3;border-radius:8px}.packing-progress::-webkit-progress-value{background:#2e8b57;border-radius:8px}.packing-progress::-moz-progress-bar{background:#2e8b57;border-radius:8px}
 .packing-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
 .packing-group{min-width:0;background:#fff;border:1px solid #dce8f2;border-radius:18px;padding:17px}
 .packing-group-heading{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}
@@ -165,71 +165,77 @@ body.map-active{height:100vh;height:100dvh;min-height:0;overflow:hidden;padding-
 
 /* Theme toggle and dark winter palette. No additional assets or requests. */
 .header-actions{display:flex;align-items:center;gap:16px;flex:none}
-.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:84px;min-height:44px;padding:9px 13px;border:1px solid #c3d9ea;border-radius:22px;background:#fafdff;color:#386e97;font-size:13px}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:44px;min-width:44px;height:44px;min-height:44px;padding:10px;border:1px solid #c3d9ea;border-radius:22px;background:#fafdff;color:#386e97;font-size:13px}
 .theme-toggle .icon{width:19px;height:19px}
-html[data-theme="dark"]{--ink:#e5eff8;--muted:#afc1d3;--blue:#8cc9ff;--line:#35516c;--glass:#182a3c;--shadow:0 12px 35px #0003,inset 0 1px 0 #416079;--surface:#182a3c;--surface-raised:#21374d;--border:#35516c;--accent:#98d2ff;--secondary:#afc1d3;color-scheme:dark}
-html[data-theme="dark"] body{background:#0d1827;background-image:radial-gradient(ellipse at 88% 2%,#193653 0,transparent 38%),radial-gradient(ellipse at 4% 50%,#152b42 0,transparent 45%)}
+html[data-theme="dark"]{--ink:#e9edf2;--muted:#b8c2cd;--blue:#8cc9ff;--line:#3b4652;--glass:#1c2228;--shadow:0 12px 35px #0003,inset 0 1px 0 #485462;--surface:#1c2228;--surface-raised:#272f38;--border:#3b4652;--accent:#98d2ff;--secondary:#b8c2cd;color-scheme:dark}
+html[data-theme="dark"] body{background:#111418;background-image:radial-gradient(ellipse at 88% 2%,#232b35 0,transparent 38%),radial-gradient(ellipse at 4% 50%,#1a2028 0,transparent 45%)}
 html[data-theme="dark"] :is(.glass,.datepill,.topnav,.brand-mark,.season .round,.mobile-nav,.day-stay,.stay-overview,.transport-card,.guide-card,.map-heading,.map-pins-panel,.toast,.update-notice){background:var(--surface);border-color:var(--border);box-shadow:var(--shadow)}
 html[data-theme="dark"] :is(.theme-toggle,.route-symbol,.draft,.daybadge,.world-tag,.world-bottom .caption,.map-list-toggle,.map-pin-row button,.update-notice button){background:var(--surface-raised);border-color:var(--border);color:var(--accent)}
 html[data-theme="dark"] :is(.eyebrow,.mini-title,.datepill span,.season,.world-copy p,.world-copy .eyebrow,.world-bottom,.route-row .days,.connection,.passport-foot span,.sectionline .small,.weather,.timeline-help,.timeline-category,.timeline-copy p,.timeline-time small,.stay-label,.day-stay p,.guide-help,.guide-japanese,.guide-note,.transport-table small,.map-toolbar>span,.map-pin-row p,.map-pin-row p.place-note,.map-pins-note,.map-pins-heading span,.coordinate-pending,.offline-status,.offline-help,footer){color:var(--secondary)}
 html[data-theme="dark"] :is(.navbtn,.timeline-time,.timeline-actions a,.timeline-save,.stay-links,.stay-overview>summary,.entry-options,.entry-options li,.transport-links,.guide-links,.guide-card summary,.map-heading a,.map-pin-row a){color:var(--accent)}
-html[data-theme="dark"] :is(.navbtn.active,.region-tabs button.active,.map-categories button.active){background:#304e6b;color:#eaf6ff;border-color:#587a98;box-shadow:none}
-html[data-theme="dark"] .region-tabs{background:#132335;border-color:var(--border)}
+html[data-theme="dark"] :is(.navbtn.active,.region-tabs button.active,.map-categories button.active){background:#34485b;color:#eaf6ff;border-color:#587a98;box-shadow:none}
+html[data-theme="dark"] .region-tabs{background:#171c22;border-color:var(--border)}
 html[data-theme="dark"] .region-tabs button{color:var(--secondary)}
-html[data-theme="dark"] .day{background:#1c3045;border-color:var(--border);color:#c4d9ed}
+html[data-theme="dark"] .day{background:#232a32;border-color:var(--border);color:#c4d9ed}
 html[data-theme="dark"] .day :is(.weekday,.location){color:inherit}
-html[data-theme="dark"] .day.active{background:linear-gradient(145deg,#367caf,#235578);border-color:#87bee4;color:#fff;box-shadow:0 5px 16px #0003}
+html[data-theme="dark"] .day.active{background:linear-gradient(145deg,#3f647f,#2d455b);border-color:#87bee4;color:#fff;box-shadow:0 5px 16px #0003}
 html[data-theme="dark"] .day .dot{background:#77a4c9}
 html[data-theme="dark"] .timeline-card{background:var(--surface);border-color:var(--border);box-shadow:0 5px 16px #0002}
-html[data-theme="dark"] .timeline-key .timeline-card{background:#203a52;border-color:#597a96}
-html[data-theme="dark"] .timeline-item:before{background:#35516c}
-html[data-theme="dark"] .timeline-dot{background:#1c3045;border-color:#8cb9dc}
-html[data-theme="dark"] .timeline-key .timeline-dot{background:#8cc9ff;border-color:#c8e7ff;box-shadow:0 0 0 3px #35516c}
+html[data-theme="dark"] .timeline-key .timeline-card{background:#283440;border-color:#597a96}
+html[data-theme="dark"] .timeline-item:before{background:#3b4652}
+html[data-theme="dark"] .timeline-dot{background:#232a32;border-color:#8cb9dc}
+html[data-theme="dark"] .timeline-key .timeline-dot{background:#8cc9ff;border-color:#c8e7ff;box-shadow:0 0 0 3px #3b4652}
 html[data-theme="dark"] .timeline-save.saved{color:#a8dbff}
 html[data-theme="dark"] .entry-status{background:#463925;color:#f2d8a7}
 html[data-theme="dark"] .timeline-thumb{background:#243f57;border-color:var(--border)}
-html[data-theme="dark"] .tripnote{background:#192e43;border-color:var(--border);color:var(--secondary)}
+html[data-theme="dark"] .tripnote{background:#232c35;border-color:var(--border);color:var(--secondary)}
 html[data-theme="dark"] :is(.guide-card details,.transport-table td,.map-pin-row,.map-pins-note,.packing-note){border-color:var(--border)}
 html[data-theme="dark"] .transport-table th{background:var(--surface-raised);color:#d5eaff}
 html[data-theme="dark"] .guide-duration{background:#493d27;color:#f7dfa4}
-html[data-theme="dark"] .map-controls{background:#132335;border-color:var(--border)}
+html[data-theme="dark"] .map-controls{background:#171c22;border-color:var(--border)}
 html[data-theme="dark"] .map-categories button{background:var(--surface);border-color:var(--border);color:var(--secondary)}
-html[data-theme="dark"] .map-categories button.active{background:#304e6b;color:#eaf6ff;border-color:#587a98}
-html[data-theme="dark"] .map-active .topbar{background:#101e2e;border-color:var(--border)}
-html[data-theme="dark"] .map-active :is(.map-heading,.map-pins-panel){background:#182a3cf7}
+html[data-theme="dark"] .map-categories button.active{background:#34485b;color:#eaf6ff;border-color:#587a98}
+html[data-theme="dark"] .map-active .topbar{background:#15191f;border-color:var(--border)}
+html[data-theme="dark"] .map-active :is(.map-heading,.map-pins-panel){background:#1c2228f7}
 html[data-theme="dark"] .map-active #map-pins{scrollbar-color:#5d7d99 transparent}
-html[data-theme="dark"] .map-stage,html[data-theme="dark"] .map-placeholder{background:#15283b;color:var(--secondary)}
+html[data-theme="dark"] .map-stage,html[data-theme="dark"] .map-placeholder{background:#171d24;color:var(--secondary)}
 html[data-theme="dark"] .gm-style :is(.gm-style-iw-c,.gm-style-iw-d){background:var(--surface)}
 html[data-theme="dark"] .gm-style .gm-style-iw-tc:after{background:var(--surface)}
 html[data-theme="dark"] .gm-style .gm-ui-hover-effect img{filter:invert(1)}
 html[data-theme="dark"] .pin-popup h3{color:var(--ink)}
 html[data-theme="dark"] .pin-popup :is(p,span){color:var(--secondary)}
 html[data-theme="dark"] .pin-popup a{color:var(--accent)}
-html[data-theme="dark"] #packing-full{background:#132335;border-color:var(--border)}
+html[data-theme="dark"] #packing-full{background:#171c22;border-color:var(--border)}
 html[data-theme="dark"] .packing-group{background:var(--surface);border-color:var(--border)}
-html[data-theme="dark"] #packing-full label{background:#21374d;color:var(--ink)}
+html[data-theme="dark"] #packing-full label{background:#272f38;color:var(--ink)}
 html[data-theme="dark"] #packing-full label:hover{border-color:#7293ae}
-html[data-theme="dark"] #packing-full input{background:#101e2e;border-color:#89aac5}
-html[data-theme="dark"] #packing-full input:checked{background:#367caf;border-color:#98d2ff}
-html[data-theme="dark"] #packing-full label:has(input:checked){background:#203e4d;border-color:#477587}
+html[data-theme="dark"] #packing-full input{background:#15191f;border-color:#89aac5}
+html[data-theme="dark"] #packing-full input:checked{background:#3f647f;border-color:#98d2ff}
+html[data-theme="dark"] #packing-full label:has(input:checked){background:#263d40;border-color:#477587}
 html[data-theme="dark"] #packing-full label:has(input:checked) span{color:#c5dce7}
 html[data-theme="dark"] #packing-full :is(.packing-title p,.packing-note),html[data-theme="dark"] .packing-group-heading>span,html[data-theme="dark"] #page-prep>.offline-help,html[data-theme="dark"] #page-prep>.tripnote{color:var(--secondary)}
-html[data-theme="dark"] #packing-full .counter{background:#294761;color:#cce8ff}
-html[data-theme="dark"] .packing-progress{background:#2d455c;accent-color:#8cc9ff}
-html[data-theme="dark"] .packing-progress::-webkit-progress-bar{background:#2d455c}
-html[data-theme="dark"] .packing-progress::-webkit-progress-value{background:#8cc9ff}
-html[data-theme="dark"] .packing-progress::-moz-progress-bar{background:#8cc9ff}
-html[data-theme="dark"] .world{background:linear-gradient(145deg,#18334c,#254b6d 70%,#193d5c);border-color:#45637d;box-shadow:var(--shadow)}
-html[data-theme="dark"] .world svg.scene{opacity:.7}
+html[data-theme="dark"] #packing-full .counter{background:#314252;color:#cce8ff}
+html[data-theme="dark"] .packing-progress{background:#343e49;accent-color:#2e8b57}
+html[data-theme="dark"] .packing-progress::-webkit-progress-bar{background:#343e49}
+html[data-theme="dark"] .packing-progress::-webkit-progress-value{background:#2e8b57}
+html[data-theme="dark"] .packing-progress::-moz-progress-bar{background:#2e8b57}
+html[data-theme="dark"] .world{background:linear-gradient(145deg,#202831,#2e3c4c 70%,#263544);border-color:#45637d;box-shadow:var(--shadow)}
+html[data-theme="dark"] .world .scene-base{opacity:.7}
 html[data-theme="dark"] .world-copy :is(p,.eyebrow){color:#cce8ff}
 html[data-theme="dark"] .ticket-rule{border-color:var(--border)}
-html[data-theme="dark"] .ticket-rule:before,html[data-theme="dark"] .ticket-rule:after{background:#0d1827}
+html[data-theme="dark"] .ticket-rule:before,html[data-theme="dark"] .ticket-rule:after{background:#111418}
 html[data-theme="dark"] button:focus-visible,html[data-theme="dark"] a:focus-visible,html[data-theme="dark"] input:focus-visible{outline-color:#a8dbff}
 @media(max-width:800px){
- .header-actions{gap:0}.header-actions .season{display:none}.theme-toggle{min-width:78px;min-height:44px;padding:8px 11px;font-size:12px}
- html[data-theme="dark"] #page-trip .daystrip{background:#101e2e;border-color:var(--border);box-shadow:0 5px 12px #0003}
+ .header-actions{gap:0}.header-actions .season{display:none}.theme-toggle{min-width:44px;min-height:44px;padding:10px}
+ html[data-theme="dark"] #page-trip .daystrip{background:#15191f;border-color:var(--border);box-shadow:0 5px 12px #0003}
  html[data-theme="dark"] #page-trip .world{background:none;border:0;box-shadow:none;opacity:.12}
 }
+
+
+.world .night-lights{opacity:0;pointer-events:none;transition:opacity .3s ease}
+html[data-theme="dark"] .world .night-lights{opacity:1}
+html[data-theme="dark"] .world .cabin-window{fill:#ffd78a}
+html[data-theme="dark"] .world .city-tower>path:first-child{fill:#dc9b70}
 
 </style>
 </head>
@@ -260,11 +266,14 @@ html[data-theme="dark"] button:focus-visible,html[data-theme="dark"] a:focus-vis
 <linearGradient id="ice2" x1="0" y1="0" x2="1" y2=".5"><stop stop-color="#a5e9ff"/><stop offset="1" stop-color="#6db8f0"/></linearGradient>
 <linearGradient id="snowtop" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e4f4ff"/></linearGradient>
 <linearGradient id="mount" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f9fdff"/><stop offset="1" stop-color="#b9ddfc"/></linearGradient>
+<radialGradient id="winter-lamp-glow"><stop offset="0" stop-color="#ffd78a" stop-opacity=".75"/><stop offset=".35" stop-color="#ffc568" stop-opacity=".3"/><stop offset="1" stop-color="#ffb64e" stop-opacity="0"/></radialGradient>
+<radialGradient id="winter-snow-light"><stop offset="0" stop-color="#ffe6b4" stop-opacity=".6"/><stop offset="1" stop-color="#ffc96d" stop-opacity="0"/></radialGradient>
 <filter id="worldshadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="16" stdDeviation="10" flood-color="#4185c6" flood-opacity=".22"/></filter>
 <filter id="pinshadow"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#568ebd" flood-opacity=".18"/></filter>
 <g id="tree"><path d="M-2 0h4v12h-4" fill="#7c9baf"/><path d="m0-43-14 22h8l-15 21h42L6-21h8Z" fill="#77b7c3"/><path d="m0-45-13 20q13 6 26 0Zm0 15L-19-4Q0 4 19-4Z" fill="#f9fdff"/></g>
-<g id="house"><path d="M-28-5v36l32 14V5Z" fill="#cda787"/><path d="M4 5v40l32-18V-9Z" fill="#b78e78"/><path d="m-36-5 32-28 48 17-37 29Z" fill="#7ba5c7"/><path d="m-39-9 33-28 51 17q4 3 0 7L7 10Z" fill="#fdfdff"/><path d="M-18 7v15l13 5V11Z" fill="#fff0bd"/><path d="M14 12v16l11-6V6Z" fill="#fff0bd"/><path d="M-17 38V26l10 5v12" fill="#8d786a"/><path d="M17-31v-14l7 2v14" fill="#aac5d9"/><ellipse cx="22" cy="-45" rx="7" ry="3" fill="#fff"/><path d="M21-53q-9-12 0-19t0-17" fill="none" stroke="#fff" opacity=".5" stroke-width="5" stroke-linecap="round"/></g>
+<g id="house"><path d="M-28-5v36l32 14V5Z" fill="#cda787"/><path d="M4 5v40l32-18V-9Z" fill="#b78e78"/><path d="m-36-5 32-28 48 17-37 29Z" fill="#7ba5c7"/><path d="m-39-9 33-28 51 17q4 3 0 7L7 10Z" fill="#fdfdff"/><path class="cabin-window" d="M-18 7v15l13 5V11Z" fill="#fff0bd"/><path class="cabin-window" d="M14 12v16l11-6V6Z" fill="#fff0bd"/><path d="M-17 38V26l10 5v12" fill="#8d786a"/><path d="M17-31v-14l7 2v14" fill="#aac5d9"/><ellipse cx="22" cy="-45" rx="7" ry="3" fill="#fff"/><path d="M21-53q-9-12 0-19t0-17" fill="none" stroke="#fff" opacity=".5" stroke-width="5" stroke-linecap="round"/></g>
 </defs>
+<g class="scene-base">
 <!-- Distant sculpted mountains -->
 <path d="M0 226 96 128l48 59 105-97 57 64 62-47 92 93 69-96 112 98 50-46 129 82v192H0Z" fill="#a1cefa" opacity=".38"/>
 <path d="m350 193 91-141 56 79 39-24 99 99-152 16Z" fill="url(#mount)"/><path d="m441 52-28 91 27-16 21 29 12-39Z" fill="#fff"/><path d="m441 52 29 105 27-26Z" fill="#a5c7f7"/><path d="m585 218 79-126 101 126Z" fill="url(#mount)"/><path d="m664 92-33 70 34-14 24 24-4-35Z" fill="#fff"/>
@@ -288,8 +297,24 @@ html[data-theme="dark"] button:focus-visible,html[data-theme="dark"] a:focus-vis
 <!-- Tiny winter explorer -->
 <ellipse cx="477" cy="263" rx="9" ry="4" fill="#90b9d8" opacity=".35"/><path d="m473 256-2 9m8-9 1 9" stroke="#688db3" stroke-width="3" stroke-linecap="round"/><path d="M470 245q7-6 13 0l-1 12h-10Z" fill="#faaf96"/><circle cx="477" cy="240" r="6" fill="#ffdec0"/><path d="M470 239q1-10 11-5l4 6Z" fill="#f7faff"/><circle cx="476" cy="231" r="3" fill="#fff"/><path d="m471 246 10 2" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
 <!-- Tokyo tower and snowy city -->
-<g transform="translate(655 288)"><path d="m0-88-22 87h10l7-17h10l7 17h10Z" fill="#f7a78e"/><path d="m0-88-7 32h14Z" fill="#fff"/><path d="M-14-30h28M-18-15h36" stroke="#fff" stroke-width="5"/><path d="m-10-47 20 20m0-20-20 20" stroke="#fff" stroke-width="3"/><path d="M0-88v-12" stroke="#b6817e" stroke-width="2"/></g>
+<g class="city-tower" transform="translate(655 288)"><path d="m0-88-22 87h10l7-17h10l7 17h10Z" fill="#f7a78e"/><path d="m0-88-7 32h14Z" fill="#fff"/><path d="M-14-30h28M-18-15h36" stroke="#fff" stroke-width="5"/><path d="m-10-47 20 20m0-20-20 20" stroke="#fff" stroke-width="3"/><path d="M0-88v-12" stroke="#b6817e" stroke-width="2"/></g>
 <g fill="#c6dcec" stroke="#f8fdff" stroke-width="3"><path d="M605 280v-31l18-5 12 6v35Z"/><path d="M680 292v-38l15-6 13 8v37Z"/><path d="M625 300v-30l17-5 9 5v31Z"/></g>
+</g>
+<g class="night-lights" aria-hidden="true">
+ <!-- Cabin windows and warm light on the snow -->
+ <ellipse cx="388" cy="247" rx="39" ry="12" fill="url(#winter-snow-light)"/>
+ <ellipse cx="375" cy="228" rx="21" ry="18" fill="url(#winter-lamp-glow)"/>
+ <ellipse cx="401" cy="228" rx="19" ry="17" fill="url(#winter-lamp-glow)"/>
+ <g transform="translate(385 213) scale(.86)" fill="#ffd78a"><path d="M-18 7v15l13 5V11Z"/><path d="M14 12v16l11-6V6Z"/></g>
+ <!-- Small lamps along the route -->
+ <g class="route-lamp" transform="translate(244 347)"><ellipse cy="2" rx="28" ry="9" fill="url(#winter-snow-light)"/><circle cy="-20" r="22" fill="url(#winter-lamp-glow)"/><path d="M0 0v-17" stroke="#5a6775" stroke-width="2.5"/><path d="M-5-26h10l2 4H-7Z" fill="#34424f"/><rect x="-4" y="-22" width="8" height="7" rx="1.5" fill="#ffe2a4"/><path d="M-5-15H5" stroke="#697584" stroke-width="2"/></g>
+ <g class="route-lamp" transform="translate(414 282) scale(.85)"><ellipse cy="2" rx="28" ry="9" fill="url(#winter-snow-light)"/><circle cy="-20" r="22" fill="url(#winter-lamp-glow)"/><path d="M0 0v-17" stroke="#5a6775" stroke-width="2.5"/><path d="M-5-26h10l2 4H-7Z" fill="#34424f"/><rect x="-4" y="-22" width="8" height="7" rx="1.5" fill="#ffe2a4"/><path d="M-5-15H5" stroke="#697584" stroke-width="2"/></g>
+ <g class="route-lamp" transform="translate(543 247) scale(.8)"><ellipse cy="2" rx="28" ry="9" fill="url(#winter-snow-light)"/><circle cy="-20" r="22" fill="url(#winter-lamp-glow)"/><path d="M0 0v-17" stroke="#5a6775" stroke-width="2.5"/><path d="M-5-26h10l2 4H-7Z" fill="#34424f"/><rect x="-4" y="-22" width="8" height="7" rx="1.5" fill="#ffe2a4"/><path d="M-5-15H5" stroke="#697584" stroke-width="2"/></g>
+ <!-- Tokyo tower and a few city windows -->
+ <ellipse cx="655" cy="252" rx="30" ry="50" fill="url(#winter-lamp-glow)" opacity=".5"/>
+ <path d="m655 200-22 87h10l7-17h10l7 17h10Z" fill="none" stroke="#ffbd75" stroke-width="1.5"/>
+ <g fill="#ffdb99"><path d="M612 255v6l5 1v-6Z"/><path d="M622 253v6l5 1v-6Z"/><path d="M686 262v6l5 1v-6Z"/><path d="M697 264v6l5 1v-6Z"/><path d="M632 278v6l5 1v-6Z"/><path d="M642 277v6l4 1v-6Z"/></g>
+</g>
 <!-- Location markers -->
 <g filter="url(#pinshadow)"><rect x="414" y="135" width="105" height="29" rx="12" fill="#ffffffec" stroke="#fff"/><circle cx="429" cy="150" r="4" fill="#76b8ed"/><text x="443" y="154" font-size="10" font-family="system-ui,sans-serif" fill="#5780a3" letter-spacing="1">HOKKAIDO</text><path d="m460 164 7 7 7-7" fill="#fff"/>
 <rect x="581" y="328" width="84" height="28" rx="12" fill="#ffffffed" stroke="#fff"/><circle cx="596" cy="342" r="4" fill="#eaa995"/><text x="609" y="346" font-size="10" font-family="system-ui,sans-serif" fill="#5780a3" letter-spacing="1">TOKYO</text><path d="m620 328 7-7 7 7" fill="#fff"/></g>
@@ -327,11 +352,11 @@ for(const el of document.querySelectorAll('.topnav,.mobile-nav'))el.innerHTML=na
 function readStore(key,fallback){try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}}
 function writeStore(key,value){try{localStorage.setItem(key,JSON.stringify(value))}catch{toast('此瀏覽器無法儲存，狀態僅保留到關閉頁面')}}
 // THEME CONTROLS START
-function syncThemeToggle(){const dark=document.documentElement.dataset.theme==='dark',button=document.getElementById('theme-toggle');button.innerHTML=icon(dark?'sun':'moon')+`<span>${dark?'淺色':'深色'}</span>`;button.setAttribute('aria-pressed',String(dark));button.setAttribute('aria-label',dark?'切換至淺色主題':'切換至深色主題')}
+function syncThemeToggle(){const dark=document.documentElement.dataset.theme==='dark',button=document.getElementById('theme-toggle');button.innerHTML=icon(dark?'sun':'moon');button.title=dark?'切換至淺色主題':'切換至深色主題';button.setAttribute('aria-pressed',String(dark));button.setAttribute('aria-label',dark?'切換至淺色主題':'切換至深色主題')}
 function setTheme(theme){
  if(!['light','dark'].includes(theme)||document.documentElement.dataset.theme===theme)return;
  document.documentElement.dataset.theme=theme;document.documentElement.style.colorScheme=theme;
- document.querySelector('meta[name="theme-color"]').content=theme==='dark'?'#0d1827':'#eaf5ff';
+ document.querySelector('meta[name="theme-color"]').content=theme==='dark'?'#111418':'#eaf5ff';
  try{localStorage.setItem('japan-theme',theme)}catch{}
  syncThemeToggle();
  // Google Maps colorScheme is an initialization option. Recreate only on an explicit theme change while the map is open.
@@ -1255,7 +1280,7 @@ const snowPaused=()=>document.documentElement.classList.toggle('paused',document
 document.addEventListener('visibilitychange',snowPaused);
 // Pause decoration when another section is visible.
 const originalShowPage=showPage;showPage=id=>{originalShowPage(id);snowPaused()};
-const APP_VERSION='v29';
+const APP_VERSION='v32';
 function showUpdate(version){if(version&&version!==APP_VERSION)document.getElementById('update-notice').hidden=false}
 if('serviceWorker' in navigator)navigator.serviceWorker.addEventListener('message',event=>{if(event.data?.type==='APP_UPDATED')showUpdate(event.data.version)});
 document.getElementById('apply-update').addEventListener('click',()=>location.reload());

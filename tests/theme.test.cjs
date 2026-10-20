@@ -11,7 +11,7 @@ function initialTheme(saved,blocked=false){
  return {theme:root.dataset.theme,scheme:root.style.colorScheme,color:meta.content};
 }
 test('saved dark theme is applied before page rendering',()=>{
- assert.deepEqual(initialTheme('dark'),{theme:'dark',scheme:'dark',color:'#0d1827'});
+ assert.deepEqual(initialTheme('dark'),{theme:'dark',scheme:'dark',color:'#111418'});
  assert.deepEqual(initialTheme('light'),{theme:'light',scheme:'light',color:'#eaf5ff'});
 });
 test('missing, invalid or inaccessible theme storage keeps the app usable',()=>{

@@ -142,3 +142,11 @@ Set the repository Actions secret `GOOGLE_MAPS_API_KEY` to the browser key after
 - Dark colors cover the trip timeline, sticky dates, transport and attraction cards, checklist, navigation and map panels. Marker category colors remain vivid.
 - Google Maps uses its native LIGHT/DARK color scheme. This initialization option requires a new map instance when changing the theme while the map is open; center and zoom are preserved. Theme changes outside the map tab load no Google resources. Reopening the map applies the selected theme. A new map instance can count as another Dynamic Maps load.
 - Verification: 28 Node tests passed, plus DOM simulations at 390px and 1280px for saved theme, switching, checklist palette, map theme/camera, lazy key loading and offline behavior using a mock Google SDK. Main text contrast 12.56:1, secondary text 6.63:1 and links 9.06:1 against their dark surfaces. Actual browser rendering and live Google map palette have not been visually inspected by the agent.
+
+### v32 visual updates
+
+- Dark theme now uses charcoal gray with a slight blue tone.
+- Theme button shows only the sun/moon icon with an accessible label and tooltip.
+- Checklist progress uses the same green in both themes.
+- Dark illustration adds warm cabin windows, three route lamps, and Tokyo tower/city lighting using inline SVG gradients. No external assets or continuous lighting animation.
+- 28 Node tests passed; DOM simulations confirmed theme persistence, lamp visibility, icon controls, green progress, and map switching at 390px and 1280px.
