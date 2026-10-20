@@ -1,0 +1,12 @@
+{
+  "id": "./",
+  "name": "日本旅遊 · 北海道與東京",
+  "short_name": "日本旅遊",
+  "lang": "zh-Hant",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eaf4fd",
+  "theme_color": "#eaf5ff",
+  "icons": [{"src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
+}

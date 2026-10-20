@@ -1,0 +1,324 @@
+[
+  {
+    "id": "yuen",
+    "query": "由縁 札幌",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E7%94%B1%E7%B8%81+%E6%9C%AD%E5%B9%8C&format=jsonv2&countrycodes=jp&limit=1",
+    "result": {
+      "place_id": 270805178,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 970317418,
+      "lat": "43.0422893",
+      "lon": "141.4174901",
+      "category": "amenity",
+      "type": "hospital",
+      "place_rank": 30,
+      "importance": 0.11734328469919902,
+      "addresstype": "amenity",
+      "name": "恵佑会札幌病院",
+      "display_name": "恵佑会札幌病院, 本郷通, 本郷通8北, 本郷通, 白石区, 札幌市, 石狩振興局, 北海道, 北海道地方, 003-0022, 日本",
+      "boundingbox": [
+        "43.0414602",
+        "43.0431070",
+        "141.4163675",
+        "141.4186092"
+      ]
+    }
+  },
+  {
+    "id": "hanamomiji",
+    "query": "花もみじ 定山渓",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E8%8A%B1%E3%82%82%E3%81%BF%E3%81%98+%E5%AE%9A%E5%B1%B1%E6%B8%93&format=jsonv2&countrycodes=jp&limit=1",
+    "result": {
+      "place_id": 272036220,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 4405145789,
+      "lat": "42.9658905",
+      "lon": "141.1620106",
+      "category": "tourism",
+      "type": "hotel",
+      "place_rank": 30,
+      "importance": 7.353398947122939e-05,
+      "addresstype": "tourism",
+      "name": "定山渓温泉花もみじ",
+      "display_name": "定山渓温泉花もみじ, 定山渓温泉西3, 定山渓温泉西, 南区, 札幌市, 石狩振興局, 北海道, 北海道地方, 061-2303, 日本",
+      "boundingbox": [
+        "42.9658405",
+        "42.9659405",
+        "141.1619606",
+        "141.1620606"
+      ]
+    }
+  },
+  {
+    "id": "futami",
+    "query": "二見吊橋 定山渓",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E4%BA%8C%E8%A6%8B%E5%90%8A%E6%A9%8B+%E5%AE%9A%E5%B1%B1%E6%B8%93&format=jsonv2&countrycodes=jp&limit=1",
+    "result": {
+      "place_id": 269133395,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 429226845,
+      "lat": "42.9630123",
+      "lon": "141.1582585",
+      "category": "amenity",
+      "type": "public_bath",
+      "place_rank": 30,
+      "importance": 7.353398947122939e-05,
+      "addresstype": "amenity",
+      "name": "定山渓温泉;湯の花定山渓殿",
+      "display_name": "定山渓温泉;湯の花定山渓殿, 二見吊橋, 定山渓温泉東4, 定山渓温泉東, 南区, 札幌市, 石狩振興局, 北海道, 北海道地方, 061-2302, 日本",
+      "boundingbox": [
+        "42.9627229",
+        "42.9633018",
+        "141.1578681",
+        "141.1586489"
+      ]
+    }
+  },
+  {
+    "id": "grids",
+    "query": "グリッズプレミアムホテル 小樽",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E3%82%B0%E3%83%AA%E3%83%83%E3%82%BA%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%9B%E3%83%86%E3%83%AB+%E5%B0%8F%E6%A8%BD&format=jsonv2&countrycodes=jp&limit=1",
+    "result": null
+  },
+  {
+    "id": "tanaka",
+    "query": "田中酒造 本店 小樽",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E7%94%B0%E4%B8%AD%E9%85%92%E9%80%A0+%E6%9C%AC%E5%BA%97+%E5%B0%8F%E6%A8%BD&format=jsonv2&countrycodes=jp&limit=1",
+    "result": null
+  },
+  {
+    "id": "otaru-no1",
+    "query": "小樽倉庫No.1",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E5%B0%8F%E6%A8%BD%E5%80%89%E5%BA%ABNo.1&format=jsonv2&countrycodes=jp&limit=1",
+    "result": null
+  },
+  {
+    "id": "sumiyoshi",
+    "query": "住吉神社 小樽",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E4%BD%8F%E5%90%89%E7%A5%9E%E7%A4%BE+%E5%B0%8F%E6%A8%BD&format=jsonv2&countrycodes=jp&limit=1",
+    "result": {
+      "place_id": 273652309,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 665046858,
+      "lat": "43.1826667",
+      "lon": "141.0027120",
+      "category": "amenity",
+      "type": "place_of_worship",
+      "place_rank": 30,
+      "importance": 0.24158668584662718,
+      "addresstype": "amenity",
+      "name": "住吉神社",
+      "display_name": "住吉神社, 住吉線, 住ノ江一丁目, 住ノ江, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0021, 日本",
+      "boundingbox": [
+        "43.1813348",
+        "43.1842783",
+        "141.0007212",
+        "141.0047606"
+      ]
+    }
+  },
+  {
+    "id": "nikka",
+    "query": "ニッカウヰスキー 余市蒸溜所",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E3%83%8B%E3%83%83%E3%82%AB%E3%82%A6%E3%83%B0%E3%82%B9%E3%82%AD%E3%83%BC+%E4%BD%99%E5%B8%82%E8%92%B8%E6%BA%9C%E6%89%80&format=jsonv2&countrycodes=jp&limit=1",
+    "result": {
+      "place_id": 271923379,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 257882278,
+      "lat": "43.1861653",
+      "lon": "140.7894950",
+      "category": "tourism",
+      "type": "attraction",
+      "place_rank": 30,
+      "importance": 5.1808194094713015e-05,
+      "addresstype": "tourism",
+      "name": "ニッカウヰスキー北海道工場 余市蒸留所",
+      "display_name": "ニッカウヰスキー北海道工場 余市蒸留所, 国道229号, 黒川町一丁目, 入舟町, 余市町, 余市郡, 後志総合振興局, 北海道, 北海道地方, 046-0004, 日本",
+      "boundingbox": [
+        "43.1841987",
+        "43.1883346",
+        "140.7874715",
+        "140.7922115"
+      ]
+    }
+  },
+  {
+    "id": "sankaku",
+    "query": "三角市場 小樽",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E4%B8%89%E8%A7%92%E5%B8%82%E5%A0%B4+%E5%B0%8F%E6%A8%BD&format=jsonv2&countrycodes=jp&limit=1",
+    "result": {
+      "place_id": 270940674,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 5603040052,
+      "lat": "43.1985420",
+      "lon": "140.9938691",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 5.879682612339998e-05,
+      "addresstype": "amenity",
+      "name": "三角市場",
+      "display_name": "三角市場, 国道5号, 稲穂四丁目, 稲穂, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0032, 日本",
+      "boundingbox": [
+        "43.1984920",
+        "43.1985920",
+        "140.9938191",
+        "140.9939191"
+      ]
+    }
+  },
+  {
+    "id": "takara",
+    "query": "宝すし 小樽",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E5%AE%9D%E3%81%99%E3%81%97+%E5%B0%8F%E6%A8%BD&format=jsonv2&countrycodes=jp&limit=1",
+    "result": {
+      "place_id": 268810643,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 6017114492,
+      "lat": "43.1919812",
+      "lon": "140.9983554",
+      "category": "amenity",
+      "type": "restaurant",
+      "place_rank": 30,
+      "importance": 5.879682612339998e-05,
+      "addresstype": "amenity",
+      "name": "宝すし",
+      "display_name": "宝すし, 花間栄通り, 花園銀座商店街, 山田町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0024, 日本",
+      "boundingbox": [
+        "43.1919312",
+        "43.1920312",
+        "140.9983054",
+        "140.9984054"
+      ]
+    }
+  },
+  {
+    "id": "masazushi",
+    "query": "おたる政寿司 本店",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E3%81%8A%E3%81%9F%E3%82%8B%E6%94%BF%E5%AF%BF%E5%8F%B8+%E6%9C%AC%E5%BA%97&format=jsonv2&countrycodes=jp&limit=1",
+    "result": null
+  },
+  {
+    "id": "kitaichi",
+    "query": "北一ホール 小樽",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E5%8C%97%E4%B8%80%E3%83%9B%E3%83%BC%E3%83%AB+%E5%B0%8F%E6%A8%BD&format=jsonv2&countrycodes=jp&limit=1",
+    "result": null
+  },
+  {
+    "id": "letao",
+    "query": "小樽洋菓子舗ルタオ 本店",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E5%B0%8F%E6%A8%BD%E6%B4%8B%E8%8F%93%E5%AD%90%E8%88%97%E3%83%AB%E3%82%BF%E3%82%AA+%E6%9C%AC%E5%BA%97&format=jsonv2&countrycodes=jp&limit=1",
+    "result": {
+      "place_id": 271061696,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 525978314,
+      "lat": "43.1913074",
+      "lon": "141.0074398",
+      "category": "craft",
+      "type": "confectionery",
+      "place_rank": 30,
+      "importance": 5.879682612339998e-05,
+      "addresstype": "craft",
+      "name": "小樽洋菓子舗ルタオ本店",
+      "display_name": "小樽洋菓子舗ルタオ本店, 16, 堺町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0027, 日本",
+      "boundingbox": [
+        "43.1911486",
+        "43.1913939",
+        "141.0073228",
+        "141.0075802"
+      ]
+    }
+  },
+  {
+    "id": "naruto",
+    "query": "若鶏時代なると 小樽",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E8%8B%A5%E9%B6%8F%E6%99%82%E4%BB%A3%E3%81%AA%E3%82%8B%E3%81%A8+%E5%B0%8F%E6%A8%BD&format=jsonv2&countrycodes=jp&limit=1",
+    "result": null
+  },
+  {
+    "id": "tengu",
+    "query": "小樽天狗山ロープウェイ",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E5%B0%8F%E6%A8%BD%E5%A4%A9%E7%8B%97%E5%B1%B1%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4&format=jsonv2&countrycodes=jp&limit=1",
+    "result": {
+      "place_id": 270925600,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 260292979,
+      "lat": "43.1779370",
+      "lon": "140.9751606",
+      "category": "building",
+      "type": "yes",
+      "place_rank": 30,
+      "importance": 5.879682612339998e-05,
+      "addresstype": "building",
+      "name": "天狗山ロープウェイ山麓駅",
+      "display_name": "天狗山ロープウェイ山麓駅, 後志自動車道, 最上二丁目, 最上, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0012, 日本",
+      "boundingbox": [
+        "43.1777883",
+        "43.1780191",
+        "140.9749727",
+        "140.9753831"
+      ]
+    }
+  },
+  {
+    "id": "keio",
+    "query": "京王プラザホテル 新宿",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E4%BA%AC%E7%8E%8B%E3%83%97%E3%83%A9%E3%82%B6%E3%83%9B%E3%83%86%E3%83%AB+%E6%96%B0%E5%AE%BF&format=jsonv2&countrycodes=jp&limit=1",
+    "result": {
+      "place_id": 265339111,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 116596175,
+      "lat": "35.6898349",
+      "lon": "139.6944072",
+      "category": "tourism",
+      "type": "hotel",
+      "place_rank": 30,
+      "importance": 0.41828013814504167,
+      "addresstype": "tourism",
+      "name": "京王プラザホテル",
+      "display_name": "京王プラザホテル, 1, 西新宿二丁目, 西新宿, 新宿区, 東京都, 160-8330, 日本",
+      "boundingbox": [
+        "35.6893035",
+        "35.6906053",
+        "139.6938138",
+        "139.6949392"
+      ]
+    }
+  },
+  {
+    "id": "new-chitose",
+    "query": "新千歳空港",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF&format=jsonv2&countrycodes=jp&limit=1",
+    "result": {
+      "place_id": 272053520,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 57007929,
+      "lat": "42.7867870",
+      "lon": "141.6829598",
+      "category": "aeroway",
+      "type": "aerodrome",
+      "place_rank": 30,
+      "importance": 0.528013030029361,
+      "addresstype": "aeroway",
+      "name": "新千歳空港",
+      "display_name": "新千歳空港, ひらめきの橋, 千歳市, 石狩振興局, 北海道, 北海道地方, 066-8655, 日本",
+      "boundingbox": [
+        "42.7531176",
+        "42.8148738",
+        "141.6666602",
+        "141.6999130"
+      ]
+    }
+  }
+]

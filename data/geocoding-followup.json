@@ -1,0 +1,344 @@
+[
+  {
+    "id": "yuen",
+    "query": "ONSEN RYOKAN 由縁札幌",
+    "source": "https://nominatim.openstreetmap.org/search?q=ONSEN+RYOKAN+%E7%94%B1%E7%B8%81%E6%9C%AD%E5%B9%8C&format=jsonv2&countrycodes=jp&limit=5",
+    "results": [
+      {
+        "place_id": 271428559,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13540638984,
+        "lat": "43.0621727",
+        "lon": "141.3456441",
+        "category": "tourism",
+        "type": "hotel",
+        "place_rank": 30,
+        "importance": 7.353398947122939e-05,
+        "addresstype": "tourism",
+        "name": "ONSEN RYOKAN 由縁 札幌",
+        "display_name": "ONSEN RYOKAN 由縁 札幌, 国道230号, 北1西7, 狸小路, 中央区, 札幌市, 石狩振興局, 北海道, 北海道地方, 060-8501, 日本",
+        "boundingbox": [
+          "43.0621227",
+          "43.0622227",
+          "141.3455941",
+          "141.3456941"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "grids",
+    "query": "GRIDS PREMIUM 小樽",
+    "source": "https://nominatim.openstreetmap.org/search?q=GRIDS+PREMIUM+%E5%B0%8F%E6%A8%BD&format=jsonv2&countrycodes=jp&limit=5",
+    "results": []
+  },
+  {
+    "id": "tanaka",
+    "query": "田中酒造",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E7%94%B0%E4%B8%AD%E9%85%92%E9%80%A0&format=jsonv2&countrycodes=jp&limit=5",
+    "results": [
+      {
+        "place_id": 271190348,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 5842058885,
+        "lat": "43.2034138",
+        "lon": "140.9985503",
+        "category": "shop",
+        "type": "convenience",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "shop",
+        "name": "田中酒造",
+        "display_name": "田中酒造, 小樽海岸公園線, 色内二丁目, 色内, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0031, 日本",
+        "boundingbox": [
+          "43.2033638",
+          "43.2034638",
+          "140.9985003",
+          "140.9986003"
+        ]
+      },
+      {
+        "place_id": 270880321,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 5843118491,
+        "lat": "43.1861668",
+        "lon": "141.0134412",
+        "category": "tourism",
+        "type": "museum",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "tourism",
+        "name": "田中酒造 亀甲蔵",
+        "display_name": "田中酒造 亀甲蔵, 小樽港線, 色内一丁目, 堺町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0021, 日本",
+        "boundingbox": [
+          "43.1861168",
+          "43.1862168",
+          "141.0133912",
+          "141.0134912"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "otaru-no1",
+    "query": "小樽倉庫",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E5%B0%8F%E6%A8%BD%E5%80%89%E5%BA%AB&format=jsonv2&countrycodes=jp&limit=5",
+    "results": [
+      {
+        "place_id": 269574426,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1021556418,
+        "lat": "43.1987122",
+        "lon": "141.0028589",
+        "category": "building",
+        "type": "warehouse",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "building",
+        "name": "澁澤倉庫",
+        "display_name": "澁澤倉庫, 小樽港縦貫線, 色内一丁目, 港町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0007, 日本",
+        "boundingbox": [
+          "43.1984895",
+          "43.1989349",
+          "141.0025652",
+          "141.0031525"
+        ]
+      },
+      {
+        "place_id": 271394628,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 561926132,
+        "lat": "43.2017245",
+        "lon": "140.9998646",
+        "category": "historic",
+        "type": "building",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "historic",
+        "name": "旧大家倉庫",
+        "display_name": "旧大家倉庫, 小樽海岸公園線, 色内二丁目, 色内, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0031, 日本",
+        "boundingbox": [
+          "43.2015753",
+          "43.2018737",
+          "140.9996261",
+          "141.0001030"
+        ]
+      },
+      {
+        "place_id": 271393016,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 561932893,
+        "lat": "43.2049619",
+        "lon": "140.9990265",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "building",
+        "name": "PRESS CAFE",
+        "display_name": "PRESS CAFE, 運河通り, 色内三丁目, 錦町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0031, 日本",
+        "boundingbox": [
+          "43.2049030",
+          "43.2050208",
+          "140.9988135",
+          "140.9992395"
+        ]
+      },
+      {
+        "place_id": 268122776,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 561932895,
+        "lat": "43.2047888",
+        "lon": "140.9991731",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "building",
+        "name": "GOLD STONE CAFE",
+        "display_name": "GOLD STONE CAFE, 運河通り, 色内三丁目, 錦町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0031, 日本",
+        "boundingbox": [
+          "43.2047524",
+          "43.2048243",
+          "140.9991263",
+          "140.9992193"
+        ]
+      },
+      {
+        "place_id": 271565393,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 9420364650,
+        "lat": "43.1922011",
+        "lon": "141.0071336",
+        "category": "information",
+        "type": "board",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "information",
+        "name": "旧木村倉庫",
+        "display_name": "旧木村倉庫, 堺町通り, 色内一丁目, 東雲町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0027, 日本",
+        "boundingbox": [
+          "43.1921511",
+          "43.1922511",
+          "141.0070836",
+          "141.0071836"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "masazushi",
+    "query": "政寿司 小樽",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E6%94%BF%E5%AF%BF%E5%8F%B8+%E5%B0%8F%E6%A8%BD&format=jsonv2&countrycodes=jp&limit=5",
+    "results": [
+      {
+        "place_id": 271100671,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 526372024,
+        "lat": "43.1941746",
+        "lon": "141.0001580",
+        "category": "amenity",
+        "type": "restaurant",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "amenity",
+        "name": "政寿司",
+        "display_name": "政寿司, 寿司屋通り, 稲穂一丁目, 山田町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0024, 日本",
+        "boundingbox": [
+          "43.1938862",
+          "43.1943258",
+          "141.0000647",
+          "141.0002837"
+        ]
+      },
+      {
+        "place_id": 270936635,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 3086102759,
+        "lat": "43.1976076",
+        "lon": "141.0025275",
+        "category": "amenity",
+        "type": "restaurant",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "amenity",
+        "name": "政寿司",
+        "display_name": "政寿司, 日銀通り, 色内一丁目, 港町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-8609, 日本",
+        "boundingbox": [
+          "43.1975576",
+          "43.1976576",
+          "141.0024775",
+          "141.0025775"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kitaichi",
+    "query": "北一硝子",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E5%8C%97%E4%B8%80%E7%A1%9D%E5%AD%90&format=jsonv2&countrycodes=jp&limit=5",
+    "results": [
+      {
+        "place_id": 268092989,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 1256671118,
+        "lat": "43.1915406",
+        "lon": "141.0073024",
+        "category": "craft",
+        "type": "glaziery",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "craft",
+        "name": "北一硝子 アウトレット",
+        "display_name": "北一硝子 アウトレット, 堺町通り, 色内一丁目, 東雲町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0027, 日本",
+        "boundingbox": [
+          "43.1914906",
+          "43.1915906",
+          "141.0072524",
+          "141.0073524"
+        ]
+      },
+      {
+        "place_id": 271660382,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 439828860,
+        "lat": "43.1934472",
+        "lon": "141.0079360",
+        "category": "amenity",
+        "type": "parking",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "amenity",
+        "name": "北一硝子特約駐車場",
+        "display_name": "北一硝子特約駐車場, 小樽港線, 色内一丁目, 堺町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0021, 日本",
+        "boundingbox": [
+          "43.1932361",
+          "43.1939054",
+          "141.0077188",
+          "141.0082195"
+        ]
+      },
+      {
+        "place_id": 271390800,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 438955625,
+        "lat": "43.2080846",
+        "lon": "140.9996670",
+        "category": "shop",
+        "type": "gift",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "shop",
+        "name": "北一硝子商品センター",
+        "display_name": "北一硝子商品センター, 運河通り, 色内三丁目, 錦町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0031, 日本",
+        "boundingbox": [
+          "43.2079339",
+          "43.2081782",
+          "140.9994950",
+          "140.9999336"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "naruto",
+    "query": "なると 小樽",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E3%81%AA%E3%82%8B%E3%81%A8+%E5%B0%8F%E6%A8%BD&format=jsonv2&countrycodes=jp&limit=5",
+    "results": [
+      {
+        "place_id": 270923291,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 2936327401,
+        "lat": "43.2002820",
+        "lon": "140.9951070",
+        "category": "amenity",
+        "type": "restaurant",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "amenity",
+        "name": "なると",
+        "display_name": "なると, 梁川通り, 稲穂三丁目, 稲穂, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0032, 日本",
+        "boundingbox": [
+          "43.2002320",
+          "43.2003320",
+          "140.9950570",
+          "140.9951570"
+        ]
+      }
+    ]
+  }
+]

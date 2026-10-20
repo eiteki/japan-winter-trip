@@ -1,0 +1,786 @@
+{
+  "year": 2026,
+  "source": "User-provided provisional itinerary",
+  "stays": [
+    {
+      "id": "yuen",
+      "name": "ONSEN RYOKAN 由縁 札幌",
+      "dates": "12/1–12/2",
+      "city": "札幌",
+      "url": "https://www.uds-hotels.com/yuen/sapporo/",
+      "query": "ONSEN RYOKAN 由縁 札幌",
+      "status": "預訂狀態待確認"
+    },
+    {
+      "id": "hanamomiji",
+      "name": "花もみじ",
+      "dates": "12/2–12/4",
+      "city": "定山溪",
+      "url": "https://shikanoyu.co.jp/hana/spa/",
+      "query": "花もみじ 定山渓",
+      "status": "預訂狀態待確認"
+    },
+    {
+      "id": "grids",
+      "name": "グリッズプレミアムホテル小樽",
+      "dates": "12/4–12/6",
+      "city": "小樽",
+      "url": "https://gridshotel.com/otaru/",
+      "query": "GRIDS PREMIUM HOTEL Otaru",
+      "status": "預訂狀態待確認"
+    },
+    {
+      "id": "keio",
+      "name": "京王廣場大飯店",
+      "dates": "12/6–12/10",
+      "city": "東京",
+      "url": "",
+      "query": "Keio Plaza Hotel Tokyo Shinjuku",
+      "status": "預訂狀態待確認"
+    }
+  ],
+  "days": [
+    {
+      "id": 1,
+      "city": "札幌",
+      "en": "札幌",
+      "region": "hokkaido",
+      "title": "桃園 → 新千歲 → 札幌",
+      "sub": "長榮航空 09:30 出發；入住由縁 札幌",
+      "hotel": {
+        "id": "yuen",
+        "name": "ONSEN RYOKAN 由縁 札幌",
+        "dates": "12/1–12/2",
+        "city": "札幌",
+        "url": "https://www.uds-hotels.com/yuen/sapporo/",
+        "query": "ONSEN RYOKAN 由縁 札幌",
+        "status": "預訂狀態待確認"
+      },
+      "note": "09:30 是桃園出發的台灣時間。抵達時間與班號尚未提供，飯店預訂狀態待確認。",
+      "items": [
+        {
+          "id": "eva-tpe-cts",
+          "title": "長榮航空：桃園 → 新千歲",
+          "desc": "09:30 桃園起飛（台灣時間）；班號及抵達時間待確認。",
+          "type": "flight",
+          "query": "Taiwan Taoyuan International Airport",
+          "tag": "FLIGHT",
+          "time": "09:30",
+          "timeConfirmed": false,
+          "timeSource": "user",
+          "timezone": "Asia/Taipei"
+        },
+        {
+          "id": "cts-sapporo",
+          "title": "新千歲機場 → 札幌",
+          "desc": "抵達後前往札幌市區，交通方式待確認。",
+          "type": "train",
+          "query": "New Chitose Airport",
+          "tag": "TRANSIT",
+          "time": "抵達後",
+          "timeConfirmed": false,
+          "timeSource": "pending"
+        },
+        {
+          "id": "stay-yuen",
+          "title": "入住 ONSEN RYOKAN 由縁 札幌",
+          "desc": "飯店已選定，預訂狀態待確認。",
+          "type": "onsen",
+          "query": "ONSEN RYOKAN 由縁 札幌",
+          "tag": "HOTEL",
+          "time": "抵達札幌後",
+          "timeConfirmed": false,
+          "timeSource": "pending",
+          "url": "https://www.uds-hotels.com/yuen/sapporo/"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "city": "定山溪",
+      "en": "定山溪",
+      "region": "hokkaido",
+      "title": "札幌 → 定山溪",
+      "sub": "飯店接駁或計程車；入住花もみじ",
+      "hotel": {
+        "id": "hanamomiji",
+        "name": "花もみじ",
+        "dates": "12/2–12/4",
+        "city": "定山溪",
+        "url": "https://shikanoyu.co.jp/hana/spa/",
+        "query": "花もみじ 定山渓",
+        "status": "預訂狀態待確認"
+      },
+      "note": "飯店接駁需要預約，目前尚未預約。若改搭計程車，直接前往花もみじ。",
+      "items": [
+        {
+          "id": "sapporo-jozankei",
+          "title": "札幌 → 定山溪",
+          "desc": "交通選項：飯店接駁（需預約，尚未預約）／計程車。",
+          "type": "train",
+          "query": "花もみじ 定山渓",
+          "tag": "TRANSIT",
+          "time": "出發時間待確認",
+          "timeConfirmed": false,
+          "timeSource": "pending",
+          "options": [
+            "飯店接駁：需預約，尚未預約",
+            "計程車：直接前往花もみじ"
+          ],
+          "status": "接駁尚未預約"
+        },
+        {
+          "id": "stay-hanamomiji",
+          "title": "入住花もみじ",
+          "desc": "定山溪住宿，預訂狀態待確認。",
+          "type": "onsen",
+          "query": "花もみじ 定山渓",
+          "tag": "HOTEL",
+          "time": "抵達後",
+          "timeConfirmed": false,
+          "timeSource": "pending",
+          "url": "https://shikanoyu.co.jp/hana/spa/"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "city": "定山溪",
+      "en": "定山溪",
+      "region": "hokkaido",
+      "title": "定山溪一日遊",
+      "sub": "二見吊橋、溫泉街",
+      "hotel": {
+        "id": "hanamomiji",
+        "name": "花もみじ",
+        "dates": "12/2–12/4",
+        "city": "定山溪",
+        "url": "https://shikanoyu.co.jp/hana/spa/",
+        "query": "花もみじ 定山渓",
+        "status": "預訂狀態待確認"
+      },
+      "note": "景點已列入草案，順序與時間尚未安排。",
+      "items": [
+        {
+          "id": "futami",
+          "title": "二見吊橋",
+          "desc": "步行參觀；出發前確認步道開放狀況。",
+          "type": "forest",
+          "query": "二見吊橋 定山渓",
+          "tag": "PLACE",
+          "time": "待排",
+          "timeConfirmed": false,
+          "timeSource": "pending"
+        },
+        {
+          "id": "onsen-street",
+          "title": "定山溪溫泉街",
+          "desc": "溫泉街散步。",
+          "type": "house",
+          "query": "定山渓温泉街",
+          "tag": "PLACE",
+          "time": "待排",
+          "timeConfirmed": false,
+          "timeSource": "pending"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "city": "小樽",
+      "en": "小樽",
+      "region": "hokkaido",
+      "title": "定山溪 → 小樽",
+      "sub": "飯店接駁至札幌轉 JR，或計程車直達",
+      "hotel": {
+        "id": "grids",
+        "name": "グリッズプレミアムホテル小樽",
+        "dates": "12/4–12/6",
+        "city": "小樽",
+        "url": "https://gridshotel.com/otaru/",
+        "query": "GRIDS PREMIUM HOTEL Otaru",
+        "status": "預訂狀態待確認"
+      },
+      "note": "交通方案尚未選定，接駁時間與預約方式待確認。入住グリッズプレミアムホテル小樽。",
+      "items": [
+        {
+          "id": "jozankei-otaru",
+          "title": "定山溪 → 小樽",
+          "desc": "飯店接駁前往札幌，再轉 JR；或直接搭計程車到飯店。",
+          "type": "train",
+          "query": "Otaru Station",
+          "tag": "TRANSIT",
+          "time": "出發時間待確認",
+          "timeConfirmed": false,
+          "timeSource": "pending",
+          "options": [
+            "飯店接駁至札幌，再轉 JR 前往小樽",
+            "計程車直接前往小樽飯店"
+          ]
+        },
+        {
+          "id": "stay-grids",
+          "title": "入住グリッズプレミアムホテル小樽",
+          "desc": "飯店已選定，預訂狀態待確認。",
+          "type": "house",
+          "query": "GRIDS PREMIUM HOTEL Otaru",
+          "tag": "PLACE",
+          "time": "抵達後",
+          "timeConfirmed": false,
+          "timeSource": "pending",
+          "url": "https://gridshotel.com/otaru/"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "city": "小樽",
+      "en": "小樽",
+      "region": "hokkaido",
+      "title": "小樽一日遊",
+      "sub": "步行景點、餐廳、天狗山；余市 Nikka 為需搭車選項",
+      "hotel": {
+        "id": "grids",
+        "name": "グリッズプレミアムホテル小樽",
+        "dates": "12/4–12/6",
+        "city": "小樽",
+        "url": "https://gridshotel.com/otaru/",
+        "query": "GRIDS PREMIUM HOTEL Otaru",
+        "status": "預訂狀態待確認"
+      },
+      "note": "以下地點均為候選，尚未全部排進同一天。余市 Nikka 需另安排交通；餐廳、纜車時刻與票價依你的資料記錄，出發前再確認。",
+      "items": [
+        {
+          "id": "otaru-walk",
+          "title": "小樽步行景點",
+          "desc": "田中酒造本店、小樽倉庫 No.1、住吉神社。",
+          "type": "house",
+          "query": "Otaru Japan",
+          "tag": "PLACE",
+          "time": "白天待排",
+          "timeConfirmed": false,
+          "timeSource": "pending",
+          "options": [
+            "田中酒造本店：日本酒，本店較近",
+            "小樽倉庫 No.1：小樽ビール醸造所",
+            "住吉神社"
+          ]
+        },
+        {
+          "id": "otaru-lunch",
+          "title": "午餐候選",
+          "desc": "三角市場、宝すし Takara Sushi、おたる政寿司本店。",
+          "type": "food",
+          "query": "Otaru sushi",
+          "tag": "FOOD",
+          "time": "用餐時間待排",
+          "timeConfirmed": false,
+          "timeSource": "pending",
+          "options": [
+            "三角市場",
+            "宝すし Takara Sushi：可預約，板前壽司，與《將太的壽司》相關",
+            "おたる政寿司 本店"
+          ]
+        },
+        {
+          "id": "otaru-cafe",
+          "title": "咖啡與甜點候選",
+          "desc": "北一ホール、LeTAO 小樽洋菓子舖。",
+          "type": "food",
+          "query": "北一ホール 小樽",
+          "tag": "FOOD",
+          "time": "下午待排",
+          "timeConfirmed": false,
+          "timeSource": "pending",
+          "options": [
+            "北一ホール：167 盞煤油燈；週二至週五下午鋼琴演奏（依提供資料，待確認）",
+            "LeTAO：雙層起司蛋糕"
+          ]
+        },
+        {
+          "id": "tengu",
+          "title": "天狗山夜景（候選）",
+          "desc": "冬期上行 09:00–19:48，下行 09:00–20:00；中央巴士套票小樽出發 2,450 日圓。以上依你提供的資料，尚未驗證當季公告。",
+          "type": "mountain",
+          "query": "Otaru Tenguyama Ropeway",
+          "tag": "PLACE",
+          "time": "傍晚待排",
+          "timeConfirmed": false,
+          "timeSource": "pending",
+          "url": "https://tenguyama.ckk.chuo-bus.co.jp/hours-and-fees/"
+        },
+        {
+          "id": "otaru-dinner",
+          "title": "晚餐候選",
+          "desc": "小樽倉庫 No.1、若雞時代なると。",
+          "type": "food",
+          "query": "若鶏時代なると 小樽",
+          "tag": "FOOD",
+          "time": "用餐時間待排",
+          "timeConfirmed": false,
+          "timeSource": "pending",
+          "options": [
+            "小樽倉庫 No.1",
+            "若雞時代なると：炸半雞"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "id": "nikka",
+          "title": "Nikka 威士忌余市蒸餾所",
+          "desc": "需搭車前往余市；是否安排、交通與參觀預約待確認。",
+          "type": "house",
+          "query": "Nikka Whisky Yoichi Distillery",
+          "tag": "PLACE",
+          "time": "可選行程",
+          "timeConfirmed": false,
+          "timeSource": "pending"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "city": "北海道 → 東京",
+      "en": "北海道 → 東京",
+      "region": "both",
+      "title": "小樽 → 新千歲機場 → 東京",
+      "sub": "媽媽班機 15:30；你的東京航班待確認",
+      "hotel": {
+        "id": "keio",
+        "name": "京王廣場大飯店",
+        "dates": "12/6–12/10",
+        "city": "東京",
+        "url": "",
+        "query": "Keio Plaza Hotel Tokyo Shinjuku",
+        "status": "預訂狀態待確認"
+      },
+      "note": "15:30 是媽媽的班機，不代表你的東京航班時間。你的新千歲 → 東京班機與抵達時間尚未提供；地圖切換東京仍暫用 18:00。",
+      "items": [
+        {
+          "id": "otaru-checkout",
+          "title": "小樽飯店退房",
+          "desc": "整理行李，準備前往新千歲機場。",
+          "type": "house",
+          "query": "GRIDS PREMIUM HOTEL Otaru",
+          "tag": "PLACE",
+          "time": "出發前",
+          "timeConfirmed": false,
+          "timeSource": "pending"
+        },
+        {
+          "id": "otaru-cts",
+          "title": "小樽 → 新千歲機場",
+          "desc": "交通方式與出發時間待確認，依各自航班安排。",
+          "type": "train",
+          "query": "New Chitose Airport",
+          "tag": "TRANSIT",
+          "time": "時間待確認",
+          "timeConfirmed": false,
+          "timeSource": "pending"
+        },
+        {
+          "id": "mother-flight",
+          "title": "媽媽的班機",
+          "desc": "15:30 起飛；目的地與班號尚未提供。",
+          "type": "flight",
+          "query": "New Chitose Airport",
+          "tag": "FLIGHT",
+          "time": "15:30",
+          "timeConfirmed": false,
+          "timeSource": "user",
+          "timezone": "Asia/Tokyo"
+        },
+        {
+          "id": "cts-tokyo",
+          "title": "你的班機：新千歲 → 東京",
+          "desc": "班機時間、東京機場與抵達時間待確認。",
+          "type": "flight",
+          "query": "New Chitose Airport",
+          "tag": "FLIGHT",
+          "time": "依航班",
+          "timeConfirmed": false,
+          "timeSource": "pending"
+        },
+        {
+          "id": "stay-keio",
+          "title": "入住京王廣場大飯店",
+          "desc": "東京住宿；抵達後前往飯店，預訂狀態待確認。",
+          "type": "house",
+          "query": "Keio Plaza Hotel Tokyo Shinjuku",
+          "tag": "PLACE",
+          "time": "抵達東京後",
+          "timeConfirmed": false,
+          "timeSource": "pending"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "city": "東京",
+      "en": "東京",
+      "region": "tokyo",
+      "title": "東京行程",
+      "sub": "景點與用餐待安排",
+      "hotel": {
+        "id": "keio",
+        "name": "京王廣場大飯店",
+        "dates": "12/6–12/10",
+        "city": "東京",
+        "url": "",
+        "query": "Keio Plaza Hotel Tokyo Shinjuku",
+        "status": "預訂狀態待確認"
+      },
+      "note": "東京每日景點尚未提供，先保留行程欄位。",
+      "items": [
+        {
+          "id": "tokyo-day7",
+          "title": "東京行程待安排",
+          "desc": "景點、交通與餐廳待補。",
+          "type": "tower",
+          "query": "Tokyo Japan",
+          "tag": "PLACE",
+          "time": "待排",
+          "timeConfirmed": false,
+          "timeSource": "pending"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "city": "東京",
+      "en": "東京",
+      "region": "tokyo",
+      "title": "東京行程",
+      "sub": "景點與用餐待安排",
+      "hotel": {
+        "id": "keio",
+        "name": "京王廣場大飯店",
+        "dates": "12/6–12/10",
+        "city": "東京",
+        "url": "",
+        "query": "Keio Plaza Hotel Tokyo Shinjuku",
+        "status": "預訂狀態待確認"
+      },
+      "note": "東京每日景點尚未提供，先保留行程欄位。",
+      "items": [
+        {
+          "id": "tokyo-day8",
+          "title": "東京行程待安排",
+          "desc": "景點、交通與餐廳待補。",
+          "type": "tower",
+          "query": "Tokyo Japan",
+          "tag": "PLACE",
+          "time": "待排",
+          "timeConfirmed": false,
+          "timeSource": "pending"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "city": "東京",
+      "en": "東京",
+      "region": "tokyo",
+      "title": "東京行程",
+      "sub": "景點與用餐待安排",
+      "hotel": {
+        "id": "keio",
+        "name": "京王廣場大飯店",
+        "dates": "12/6–12/10",
+        "city": "東京",
+        "url": "",
+        "query": "Keio Plaza Hotel Tokyo Shinjuku",
+        "status": "預訂狀態待確認"
+      },
+      "note": "東京每日景點尚未提供，先保留行程欄位。",
+      "items": [
+        {
+          "id": "tokyo-day9",
+          "title": "東京行程待安排",
+          "desc": "景點、交通與餐廳待補。",
+          "type": "tower",
+          "query": "Tokyo Japan",
+          "tag": "PLACE",
+          "time": "待排",
+          "timeConfirmed": false,
+          "timeSource": "pending"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "city": "東京",
+      "en": "東京",
+      "region": "tokyo",
+      "title": "東京行程／返程待確認",
+      "sub": "12/10 安排與返程班機待提供",
+      "hotel": {
+        "id": "keio",
+        "name": "京王廣場大飯店",
+        "dates": "12/6–12/10",
+        "city": "東京",
+        "url": "",
+        "query": "Keio Plaza Hotel Tokyo Shinjuku",
+        "status": "預訂狀態待確認"
+      },
+      "note": "返程機場、班機時間與當日安排尚未提供。",
+      "items": [
+        {
+          "id": "tokyo-day10",
+          "title": "12/10 安排待確認",
+          "desc": "依返程班機補上退房、交通與當日行程。",
+          "type": "house",
+          "query": "Keio Plaza Hotel Tokyo Shinjuku",
+          "tag": "PLACE",
+          "time": "待確認",
+          "timeConfirmed": false,
+          "timeSource": "pending"
+        }
+      ]
+    }
+  ],
+  "map": {
+    "tokyoArrival": "2026-12-06T18:00",
+    "regions": {
+      "hokkaido": {
+        "name": "北海道",
+        "query": "Hokkaido Japan",
+        "center": {
+          "lat": 43.1,
+          "lng": 141.1
+        },
+        "zoom": 8,
+        "spots": [
+          {
+            "id": "yuen",
+            "name": "ONSEN RYOKAN 由縁 札幌",
+            "category": "hotel",
+            "address": "札幌",
+            "query": "ONSEN RYOKAN 由縁 札幌",
+            "note": "",
+            "url": "https://www.uds-hotels.com/yuen/sapporo/",
+            "lat": 43.0621727,
+            "lng": 141.3456441,
+            "coordinateStatus": "OSM 地點座標"
+          },
+          {
+            "id": "hanamomiji",
+            "name": "花もみじ",
+            "category": "hotel",
+            "address": "定山溪",
+            "query": "花もみじ 定山渓",
+            "note": "",
+            "url": "https://shikanoyu.co.jp/hana/spa/",
+            "lat": 42.9658905,
+            "lng": 141.1620106,
+            "coordinateStatus": "OSM 地點座標"
+          },
+          {
+            "id": "grids",
+            "name": "グリッズプレミアムホテル小樽",
+            "category": "hotel",
+            "address": "小樽",
+            "query": "GRIDS PREMIUM HOTEL Otaru",
+            "note": "",
+            "url": "https://gridshotel.com/otaru/",
+            "lat": null,
+            "lng": null,
+            "coordinateStatus": "座標待確認"
+          },
+          {
+            "id": "futami",
+            "name": "二見吊橋",
+            "category": "attraction",
+            "address": "定山溪",
+            "query": "二見吊橋 定山渓",
+            "note": "",
+            "url": "",
+            "lat": 42.9630123,
+            "lng": 141.1582585,
+            "coordinateStatus": "OSM 地點座標"
+          },
+          {
+            "id": "onsen-street",
+            "name": "定山溪溫泉街",
+            "category": "attraction",
+            "address": "定山溪",
+            "query": "定山渓温泉街",
+            "note": "",
+            "url": "",
+            "lat": null,
+            "lng": null,
+            "coordinateStatus": "座標待確認"
+          },
+          {
+            "id": "tanaka",
+            "name": "田中酒造 本店",
+            "category": "attraction",
+            "address": "小樽",
+            "query": "田中酒造 本店 小樽",
+            "note": "日本酒；本店較近",
+            "url": "",
+            "lat": 43.2034138,
+            "lng": 140.9985503,
+            "coordinateStatus": "OSM 地點座標"
+          },
+          {
+            "id": "otaru-no1",
+            "name": "小樽倉庫 No.1",
+            "category": "food",
+            "address": "小樽",
+            "query": "小樽倉庫No.1 小樽ビール醸造所",
+            "note": "餐廳與小樽ビール醸造所",
+            "url": "",
+            "lat": null,
+            "lng": null,
+            "coordinateStatus": "座標待確認"
+          },
+          {
+            "id": "sumiyoshi",
+            "name": "住吉神社",
+            "category": "attraction",
+            "address": "小樽",
+            "query": "住吉神社 小樽",
+            "note": "",
+            "url": "",
+            "lat": 43.1826667,
+            "lng": 141.002712,
+            "coordinateStatus": "OSM 地點座標"
+          },
+          {
+            "id": "nikka",
+            "name": "Nikka 威士忌余市蒸餾所",
+            "category": "attraction",
+            "address": "余市",
+            "query": "Nikka Whisky Yoichi Distillery",
+            "note": "需搭車；參觀與預約待確認",
+            "url": "",
+            "lat": 43.1861653,
+            "lng": 140.789495,
+            "coordinateStatus": "OSM 地點座標"
+          },
+          {
+            "id": "sankaku",
+            "name": "三角市場",
+            "category": "food",
+            "address": "小樽",
+            "query": "三角市場 小樽",
+            "note": "",
+            "url": "",
+            "lat": 43.198542,
+            "lng": 140.9938691,
+            "coordinateStatus": "OSM 地點座標"
+          },
+          {
+            "id": "takara",
+            "name": "宝すし Takara Sushi",
+            "category": "food",
+            "address": "小樽",
+            "query": "宝すし 小樽",
+            "note": "可預約；板前壽司；《將太的壽司》相關",
+            "url": "",
+            "lat": 43.1919812,
+            "lng": 140.9983554,
+            "coordinateStatus": "OSM 地點座標"
+          },
+          {
+            "id": "masazushi",
+            "name": "おたる政寿司 本店",
+            "category": "food",
+            "address": "小樽",
+            "query": "おたる政寿司 本店",
+            "note": "",
+            "url": "",
+            "lat": 43.1941746,
+            "lng": 141.000158,
+            "coordinateStatus": "OSM 地點座標"
+          },
+          {
+            "id": "kitaichi",
+            "name": "北一硝子 北一ホール",
+            "category": "food",
+            "address": "小樽",
+            "query": "北一ホール 小樽",
+            "note": "167 盞煤油燈；週二至週五下午鋼琴演奏（依提供資料，待確認）",
+            "url": "",
+            "lat": null,
+            "lng": null,
+            "coordinateStatus": "座標待確認"
+          },
+          {
+            "id": "letao",
+            "name": "LeTAO 小樽洋菓子舖",
+            "category": "food",
+            "address": "小樽",
+            "query": "LeTAO Otaru Main Store",
+            "note": "雙層起司蛋糕",
+            "url": "",
+            "lat": 43.1913074,
+            "lng": 141.0074398,
+            "coordinateStatus": "OSM 地點座標"
+          },
+          {
+            "id": "naruto",
+            "name": "若雞時代なると",
+            "category": "food",
+            "address": "小樽",
+            "query": "若鶏時代なると 小樽",
+            "note": "炸半雞",
+            "url": "",
+            "lat": 43.200282,
+            "lng": 140.995107,
+            "coordinateStatus": "OSM 地點座標"
+          },
+          {
+            "id": "tengu",
+            "name": "小樽天狗山纜車",
+            "category": "attraction",
+            "address": "小樽",
+            "query": "Otaru Tenguyama Ropeway",
+            "note": "冬期上行 09:00–19:48，下行至 20:00；巴士套票 2,450 日圓（依提供資料，待確認）",
+            "url": "https://tenguyama.ckk.chuo-bus.co.jp/hours-and-fees/",
+            "lat": 43.177937,
+            "lng": 140.9751606,
+            "coordinateStatus": "OSM 地點座標"
+          },
+          {
+            "id": "new-chitose",
+            "name": "新千歲機場",
+            "category": "transit",
+            "address": "千歲",
+            "query": "New Chitose Airport",
+            "note": "",
+            "url": "",
+            "lat": 42.786787,
+            "lng": 141.6829598,
+            "coordinateStatus": "OSM 地點座標"
+          }
+        ]
+      },
+      "tokyo": {
+        "name": "東京",
+        "query": "Tokyo Japan",
+        "center": {
+          "lat": 35.6898349,
+          "lng": 139.6944072
+        },
+        "zoom": 12,
+        "spots": [
+          {
+            "id": "keio",
+            "name": "京王廣場大飯店",
+            "category": "hotel",
+            "address": "東京・新宿",
+            "query": "Keio Plaza Hotel Tokyo Shinjuku",
+            "note": "",
+            "url": "",
+            "lat": 35.6898349,
+            "lng": 139.6944072,
+            "coordinateStatus": "OSM 地點座標"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "grids",
+    "query": "グリッズプレミアムホテル小樽",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E3%82%B0%E3%83%AA%E3%83%83%E3%82%BA%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%9B%E3%83%86%E3%83%AB%E5%B0%8F%E6%A8%BD&format=jsonv2&countrycodes=jp&limit=5",
+    "results": []
+  },
+  {
+    "id": "otaru-no1",
+    "query": "小樽ビール",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E5%B0%8F%E6%A8%BD%E3%83%93%E3%83%BC%E3%83%AB&format=jsonv2&countrycodes=jp&limit=5",
+    "results": [
+      {
+        "place_id": 272294249,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 224243786,
+        "lat": "43.1985610",
+        "lon": "140.9953588",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 5.879682612339998e-05,
+        "addresstype": "building",
+        "name": "朝日生命小樽ビル",
+        "display_name": "朝日生命小樽ビル, 静屋通り, 稲穂三丁目, 稲穂, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0032, 日本",
+        "boundingbox": [
+          "43.1983431",
+          "43.1987146",
+          "140.9951900",
+          "140.9955262"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kitaichi",
+    "query": "北一ホール",
+    "source": "https://nominatim.openstreetmap.org/search?q=%E5%8C%97%E4%B8%80%E3%83%9B%E3%83%BC%E3%83%AB&format=jsonv2&countrycodes=jp&limit=5",
+    "results": []
+  }
+]
