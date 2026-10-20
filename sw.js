@@ -1,6 +1,6 @@
 /* Change this version whenever the application files change. */
 const CACHE_PREFIX = 'yuki-winter-';
-const CACHE_NAME = CACHE_PREFIX + 'v19';
+const CACHE_NAME = CACHE_PREFIX + 'v27';
 const INDEX_URL = new URL('./index.html', self.location.href).href;
 const SCOPE_URL = new URL('./', self.location.href).href;
 const ASSETS = ['index.html', 'manifest.webmanifest', 'icon.svg'].map(path => new URL('./' + path, self.location.href).href);

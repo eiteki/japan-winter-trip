@@ -782,5 +782,173 @@
         ]
       }
     }
+  },
+  "attractionGuides": [
+    {
+      "id": "futami",
+      "day": 3,
+      "name": "二見吊橋",
+      "japanese": "二見吊橋",
+      "intro": "定山溪豐平川上的紅色吊橋，是溫泉區散步的候選景點。",
+      "duration": "建議 30–45 分鐘",
+      "origin": "花もみじ 定山渓",
+      "destination": "二見吊橋 定山渓",
+      "mode": "walking",
+      "route": "花もみじ → 溫泉街 → 二見公園／二見吊橋",
+      "note": "冬季步道及吊橋通行狀況待確認；先詢問飯店，若封閉就改走溫泉街。",
+      "url": "https://jozankei.jp/en/spot/163/"
+    },
+    {
+      "id": "onsen-street",
+      "day": 3,
+      "name": "定山溪溫泉街",
+      "japanese": "定山渓温泉",
+      "intro": "沿豐平川分布的溫泉旅館街，可以從飯店出發散步，配合泡湯安排。",
+      "duration": "建議 1–2 小時",
+      "origin": "花もみじ 定山渓",
+      "destination": "定山渓温泉",
+      "mode": "walking",
+      "route": "以花もみじ為起點，步行遊覽溫泉街",
+      "note": "足湯及店家是否營業需當日確認；雪地步行請多留時間。",
+      "url": "https://jozankei.jp/en/sozoro/"
+    },
+    {
+      "id": "tanaka",
+      "day": 5,
+      "name": "田中酒造 本店",
+      "japanese": "田中酒造 本店",
+      "intro": "小樽的日本酒酒造店，適合了解當地酒款、選購伴手禮。",
+      "duration": "建議 30–45 分鐘",
+      "origin": "グリッズプレミアムホテル小樽",
+      "destination": "田中酒造 本店 小樽",
+      "mode": "walking",
+      "route": "飯店 → 田中酒造本店；可與小樽站周邊安排一起",
+      "note": "本店與亀甲蔵是不同地點。若想參觀製酒流程，需另外確認亀甲蔵的安排。",
+      "url": "http://tanakashuzo.com/"
+    },
+    {
+      "id": "otaru-no1",
+      "day": 5,
+      "name": "小樽倉庫 No.1",
+      "japanese": "小樽ビール 小樽倉庫No.1",
+      "intro": "位於小樽運河旁的啤酒餐廳，可安排用餐或休息，也方便接續運河散步。",
+      "duration": "建議 1–1.5 小時",
+      "origin": "グリッズプレミアムホテル小樽",
+      "destination": "小樽ビール 小樽倉庫No.1",
+      "mode": "walking",
+      "route": "飯店 → 小樽運河 → 小樽倉庫 No.1",
+      "note": "餐廳營業、座位及釀造參觀安排待確認；可作午餐或晚餐候選。",
+      "url": "https://otarubeer.com/"
+    },
+    {
+      "id": "sumiyoshi",
+      "day": 5,
+      "name": "住吉神社",
+      "japanese": "小樽住吉神社",
+      "intro": "小樽的神社景點，位於市區南側，可搭配南小樽、堺町一帶散步。",
+      "duration": "建議 30–45 分鐘",
+      "origin": "グリッズプレミアムホテル小樽",
+      "destination": "小樽住吉神社",
+      "mode": "walking",
+      "route": "飯店 → 住吉神社；路程較長時改搭計程車",
+      "note": "參道有坡度及階梯，積雪時要留意止滑；不建議把雪天步行時間排太緊。",
+      "url": "http://www.otarusumiyoshijinja.or.jp/"
+    },
+    {
+      "id": "kitaichi",
+      "day": 5,
+      "name": "北一ホール",
+      "japanese": "北一硝子 三号館 北一ホール",
+      "intro": "北一硝子的咖啡廳，你提供的資料提到廳內有 167 盞煤油燈；可與堺町、LeTAO 安排一起。",
+      "duration": "建議 45–60 分鐘",
+      "origin": "グリッズプレミアムホテル小樽",
+      "destination": "北一ホール 小樽",
+      "mode": "walking",
+      "route": "飯店 → 堺町通 → 北一ホール",
+      "note": "12/5 是週六，與你提供的週二至週五鋼琴演奏時段不同；不要預設當天有演奏。燈數與演奏安排依提供資料，尚未查證。",
+      "url": "https://kitaichiglass.co.jp/"
+    },
+    {
+      "id": "tengu",
+      "day": 5,
+      "name": "小樽天狗山",
+      "japanese": "小樽天狗山ロープウエイ",
+      "intro": "搭纜車登上天狗山，從山上眺望小樽市區與港口；目前安排為夜景候選。",
+      "duration": "建議 1.5–2 小時，另加往返交通",
+      "origin": "小樽駅",
+      "destination": "天狗山ロープウエイ 山麓駅",
+      "mode": "transit",
+      "route": "小樽站 → 天狗山山麓站（中央巴士天狗山線／計程車）→ 纜車",
+      "note": "依你提供資料：冬期上行 09:00–19:48、下行至 20:00；小樽巴士套票 ¥2,450。2026 冬季票價、班次與停駛情況待確認。",
+      "url": "https://tenguyama.ckk.chuo-bus.co.jp/hours-and-fees/"
+    },
+    {
+      "id": "nikka",
+      "day": 5,
+      "name": "Nikka 余市蒸餾所",
+      "japanese": "ニッカウヰスキー 余市蒸溜所",
+      "intro": "位於余市的威士忌蒸餾所，與小樽市區景點有一段距離，適合另留一個時段。",
+      "duration": "建議半天，包含往返交通",
+      "origin": "小樽駅",
+      "destination": "ニッカウヰスキー 余市蒸溜所",
+      "mode": "transit",
+      "route": "小樽站 → 余市站（JR／巴士）→ 步行至蒸餾所",
+      "note": "其他候選行程，尚未排入時間軸。導覽預約規則、可參觀區域與冬季班次待確認；酒後不開車。",
+      "url": "https://nikka.com/en/distilleries/yoichi/faq/"
+    }
+  ],
+  "dayTransport": {
+    "1": [
+      {
+        "route": "新千歲機場 → 札幌 → 由縁",
+        "mode": "JR／市區交通",
+        "time": "依抵達航班；車程待確認",
+        "cost": "待確認",
+        "note": "班機 09:30 是台灣起飛時間；日本抵達時間尚未提供。",
+        "origin": "新千歳空港",
+        "destination": "ONSEN RYOKAN 由縁 札幌",
+        "travel": "transit",
+        "url": "https://www.jrhokkaido.co.jp/global/"
+      }
+    ],
+    "2": [
+      {
+        "route": "札幌 → 花もみじ（定山溪）",
+        "mode": "飯店接駁／計程車",
+        "time": "接駁發車時間待確認",
+        "cost": "待確認",
+        "note": "飯店接駁需要預約，目前尚未預約；計程車為備選。",
+        "origin": "ONSEN RYOKAN 由縁 札幌",
+        "destination": "花もみじ 定山渓",
+        "travel": "driving",
+        "url": "https://shikanoyu.co.jp/en/hanamomiji/access"
+      }
+    ],
+    "4": [
+      {
+        "route": "花もみじ → 札幌 → 小樽站 → 飯店",
+        "mode": "飯店接駁＋JR／計程車直達",
+        "time": "轉乘待排；小樽站步行 9 分鐘",
+        "cost": "待確認",
+        "note": "飯店官網資料：JR 小樽站至 Grids 步行 9 分鐘，雪天另留時間；接駁與 JR 班次待確認。",
+        "origin": "花もみじ 定山渓",
+        "destination": "グリッズプレミアムホテル小樽",
+        "travel": "transit",
+        "url": "https://gridshotel.com/otaru/"
+      }
+    ],
+    "6": [
+      {
+        "route": "小樽 → 新千歲機場",
+        "mode": "JR／計程車",
+        "time": "出發時間待排",
+        "cost": "待確認",
+        "note": "媽媽班機 15:30（日本時間）。先確認航廈與航空公司報到截止時間，再倒推出發；你的東京班機時間尚未提供。",
+        "origin": "小樽駅",
+        "destination": "新千歳空港",
+        "travel": "transit",
+        "url": "https://www.jrhokkaido.co.jp/global/"
+      }
+    ]
   }
 }
